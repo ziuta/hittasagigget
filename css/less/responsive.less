@@ -62,6 +62,15 @@
 		padding:40px 0px 10px 0px;
 		p { margin-bottom:30px; }
 	}
+	#numbers {
+		position:relative;
+		padding: 50px 0 160px;
+		.number { font-size:48px; }
+		.customResponsive { padding: 0px; }
+		.customWidth, .customResponsive .customWidth { width:49%; display:inline-block; }
+		.customResponsive .customWidth { margin: 20px 0px;  }
+		.danceBands { position:absolute; left:25%; bottom:50px; }
+	}
 	#links .customWidth { width: auto; text-align:center; }
 	#links .customWidth, #links .customWidth:last-child { margin-top: 40px; }
 	#links .customWidth li { margin-bottom: 10px; }
@@ -118,14 +127,15 @@
 }
 @media screen and (max-width:379px) {
 	#lookingForBrand .bandSearch {
-		// h2 {
-		// 	position:relative;
-		// 	top:40px;
-		// }
 		form {
+			h2 { font-size:36px; }
 			// margin-top: 80px;
 			.partyType, .btn { width:255px; }
 			.location, .partyDay { width: 120px; }
 		}
+	}
+	#numbers {
+		.type { font-size:20px; }
+		.number { font-size:44px; }
 	}
 }
