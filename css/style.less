@@ -1,0 +1,158 @@
+/*------------------------------------------------------------------
+[Master Stylesheet]
+
+Project:	Hittasagigget
+Version:	1.1
+Last change:	07/09/14 [Homepage styling]
+-------------------------------------------------------------------*/
+/*------------------------------------------------------------------
+[Table of contents]
+
+	1. RESET
+	2. FONTS
+	3. VARIABLES
+	4. MIXINS
+	5. OUTLINER
+	6. GLOBAL STYLES / <body>
+	7. COMMON CLASSES / common to the whole project 
+	8. IMPORTS
+
+/*======================================================================================== */
+/*==== 1. RESET ========================================================================== */
+/*======================================================================================== */
+@import "less/reset.less";
+/*======================================================================================== */
+/*==== 2. FONTS ========================================================================== */
+/*======================================================================================== */
+@font-face {
+    font-family: Nautilus;
+    src: url(../fonts/Nautilus.otf);
+}
+//----
+@font-face {
+    font-family: Oswald-Bold;
+    src: url(../fonts/Oswald-Bold.ttf);
+}
+@font-face {
+    font-family: Oswald-Light;
+    src: url(../fonts/Oswald-Light.ttf);
+}
+@font-face {
+    font-family: Oswald-Regular;
+    src: url(../fonts/Oswald-Regular.ttf);
+}
+//----
+@font-face {
+    font-family: OpenSans-Bold;
+    src: url(../fonts/OpenSans-Bold.ttf);
+}
+@font-face {
+    font-family: OpenSans-Regular;
+    src: url(../fonts/OpenSans-Regular.ttf);
+}
+@font-face {
+    font-family: OpenSans-Light;
+    src: url(../fonts/OpenSans-Light.ttf);
+}
+/*======================================================================================== */
+/*===== 3. VARIABLES ===================================================================== */
+/*======================================================================================== */
+@linkColor:		#0d80c8; // ligth blue
+
+/*======================================================================================== */
+/*===== 4. MIXINS ======================================================================== */
+/*======================================================================================== */
+.gradient (@startColor: #eee, @endColor: white) {
+	background-color: @startColor;
+	background: -webkit-gradient(linear, left top, left bottom, from(@startColor), to(@endColor));
+	background: -webkit-linear-gradient(top, @startColor, @endColor);
+	background: -moz-linear-gradient(top, @startColor, @endColor);
+	background: -ms-linear-gradient(top, @startColor, @endColor);
+	background: -o-linear-gradient(top, @startColor, @endColor);
+}
+.transition (@transition, @speed) {
+	-webkit-transition: @transition @speed;  
+	-moz-transition:    @transition @speed;
+	-ms-transition:     @transition @speed; 
+	-o-transition:      @transition @speed;  
+}
+/*======================================================================================== */
+/*===== 5 OUTLINER ====================================================================== */
+/*======================================================================================== */
+header > h2,
+nav > h2,
+section > h2,
+aside > h2,
+footer > h2,
+main > h2 { text-indent:-9678px; position:absolute; }
+/*======================================================================================== */
+/*===== 6. GLOBAL STYLES ================================================================= */
+/*======================================================================================== */
+body {
+	font-family: 'OpenSans-Regular';
+	font-size:14px;
+	overflow-x:hidden;
+}
+/*======================================================================================== */
+/*===== 7. COMMON CLASSES ================================================================ */
+/*======================================================================================== */
+//-------------------------------- Headers ------------------------------//
+// <h2> tag engaged for outliner
+h3 { font-size:24px; font-family:'Oswald-Bold', 'Arial' }
+h4 { font-size:16px; font-family:'OpenSans-Bold', 'Arial' }
+
+//------------------------------- Buttons & Inputs ---------------------//
+.form-control, .btn {
+	height: 42px;
+}
+.btn:focus, .btn:active {
+	outline:0px !important;
+	border:0px !important;
+}
+// red button
+.btn-action {
+	background-color: #e63432;
+	.transition(all,0.2s);
+	color: #FFF;
+	&:focus, &:hover {
+		color:#FFF;
+		background-color: darken(#e63432, 10%);
+	}
+}
+//------------------------------ Thick color lines --------------------//
+// example - homepage #numbers section
+.line {
+	width:40px;
+	height:4px;
+	margin: 10px auto 0px auto;
+}
+.lineDarkBlue { background-color: #0d58c8; }
+.lineGreen { background-color: #67ba53; }
+.lineLightBlue { background-color: @linkColor; }
+.lineRed { background-color: #d82f2d; }
+.lineGray { background-color: #bbd4ed; }
+//------------------------------ Datepicker --------------------------//
+.datepicker {
+	padding: 5px;
+	tr {
+		th { font-family: 'Oswald-Bold'; vertical-align:middle; padding-bottom:8px; }
+		th.dow { font-family: 'Oswald-Bold' }
+		td { font-family: 'Oswald-Regular' }
+	}
+	.table-condensed>thead>tr>th,
+	.table-condensed>tbody>tr>th,
+	.table-condensed>tfoot>tr>th,
+	.table-condensed>thead>tr>td,
+	.table-condensed>tbody>tr>td,
+	.table-condensed>tfoot>tr>td { padding: 7px; }
+	.table-condensed>thead>tr>th.prev,
+	.table-condensed>thead>tr>th.next { padding-bottom:10px; }
+}
+/*======================================================================================== */
+/*===== 8. IMPORTS ======================================================================= */
+/*======================================================================================== */
+@import "bootstrap-datetimepicker.min.css";
+@import "less/header.less";
+@import "less/footer.less";
+@import "less/homepage.less";
+@import "less/responsive.less";

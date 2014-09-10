@@ -1,0 +1,96 @@
+/*------------------------------------------------------------------ */
+/*------- NAVIGATION ----------------------------------------------- */
+/*------------------------------------------------------------------ */
+#mainNavigation {
+	.gradient (#121214, #141315);
+	height:70px;
+	color: #FFF;
+	padding: 15px;
+	h1 {
+		font-family: 'Nautilus','Arial';
+		font-size:26px;
+		margin:10px 25px 10px 10px;
+	}
+	.speakersImage {
+		background: url('../img/speakers.png') no-repeat 50%;
+		width:40px;
+		height:41px;
+	}
+	.nav {
+		font-family: 'Oswald-Regular', 'Arial';
+		font-size:14px;
+		position:relative;
+		bottom:3px;
+		.open>a, .open>a:hover, .open>a:focus {
+			background-color: #FFF;
+			color:#121315;
+		}
+		li {
+			a {
+				padding: 15px 20px;
+				color: #FFF;
+				&:hover { color: #141315 }
+			}
+		}
+	}
+	.dropdown-menu {
+		width:440px;
+		padding:0px;
+		border:0px;
+		border-radius:0px;
+		box-shadow:none;
+		.col-md-6:first-child { padding-right:5px; }
+		.col-md-6:last-child { padding-left:5px; }
+		li {
+			position:relative;
+			padding:10px;
+			a {
+				font-size:16px;
+				font-family: 'Oswald-Bold';
+				color: #121315;
+				padding:10px;
+				position:absolute;
+				&:hover {
+					color:@linkColor;
+				}
+			}
+			span {
+				color:#5f6a7d;
+				position:relative;
+				bottom:10px;
+				padding-left:10px;
+			}
+			&.viewAll {
+				text-align:center;
+				height:80px;
+				a {
+					display:inline-block;
+					position:relative;
+					top:15px;
+					&:extend(#mainNavigation .dropdown-menu li a:hover);
+				}
+			}
+			&:hover {
+				background-color: #f1f4f8;
+			}
+		}
+	}
+	.speakersImage, h1 { display: inline-block; float:left; }
+	.login {
+		float:right;
+		padding: 6px 0px 6px 45px;
+		font-family: 'OpenSans-Bold', 'Arial';
+		& * { font-size:12px; }
+		.joinUs { margin-right: 13px; }
+		.member {
+			display:inline-block;
+			background-color: @linkColor;
+			width:140px;
+			height:30px;
+			border-radius:15px;
+			padding:8px 18px;
+			span { margin-right: 5px; }
+		}
+		.joinUs, .member { color:#FFF; text-decoration:none; }
+	}
+}

@@ -1,0 +1,140 @@
+/*------------------------------------------------------------------ */
+/*------- LOOKING FOR BRAND? --------------------------------------- */
+/*------------------------------------------------------------------ */
+#lookingForBrand {
+	height:550px;
+ 	position: relative;
+	background: url(../img/header-bg.png) 50% 0 no-repeat fixed;
+ 	@media screen and (min-width:1641px) {
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+ 	}
+	.bandSearch {
+		position: relative; 
+		top: 173px;
+		text-align: center; 
+		width: 100%; 
+		color:#FFF;
+	}
+	h2 {
+		font-size:54px;
+		font-family: 'Oswald-Bold', 'Arial';
+	}
+	p { 
+		font-size:16px;
+		color: #c7c7c7;
+		margin: 10px 0px 15px 0px;
+	}
+	form {
+		padding: 0px 82px;
+		.form-control {
+			margin-right: 10px;
+			font-size:14px;
+			color: #70757e;
+			.transition(all,0.2s);
+			opacity: 0.9;
+			&:focus { opacity:1; }
+		}
+		.location, .partyDay {
+			width:150px;
+		}
+		.location, .partyType {
+			padding-left:25px;
+		}
+		.location {
+			background: url(../img/pin.png) #FFF 4% center no-repeat;
+			float:left;
+		}
+		.partyDay{
+			background: url(../img/calendar.png) #FFF 94% center no-repeat;
+			padding-right:25px;
+		}
+		.partyType {
+			width: 310px;
+			background: url(../img/drink.png) #FFF 2% center no-repeat;
+			float:left;
+		}
+		.btn {
+			width: 135px;
+		}
+	}
+}
+/*------------------------------------------------------------------ */
+/*------- BENEFITS ------------------------------------------------- */
+/*------------------------------------------------------------------ */
+#benefits {
+	padding:40px 0px;
+	h4 {
+		display:inline-block;
+		margin-bottom: 15px;
+		color: #2a2c2f;
+	}
+	p {
+		line-height:145%;
+	}
+	.glyphicon {
+		margin-right: 10px;
+	}
+	p, .glyphicon {
+		color: #7b828e;
+	}
+}
+/*------------------------------------------------------------------ */
+/*------- NUMBERS -------------------------------------------------- */
+/*------------------------------------------------------------------ */
+#numbers {
+	background: url(../img/header-bg.png) 50% 400px no-repeat fixed;
+	@media screen and (min-width:1641px) {
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+ 	}
+	padding: 90px 0px 75px 0px;
+	position:relative;
+	color:#FFF;
+	.customWidth {
+		width:20%;
+		text-align:center;
+	}
+	.number {
+		display:block;
+		font-family: 'Oswald-Bold';
+		font-size:52px;
+	}
+	.type {
+		font-family: 'Oswald-Regular';
+		font-size:24px;
+	}
+	.number, .type { margin-bottom: 10px; }
+}
+/*------------------------------------------------------------------ */
+/*------- MOST POPULAR --------------------------------------------- */
+/*------------------------------------------------------------------ */
+#mostPopular {
+	padding:65px 0px;
+	.title {
+		font-family: 'Oswald-Bold', 'Arial';
+		font-size:24px;
+	}
+	.popularBand {
+		margin-bottom: 35px;
+		position:relative;
+	}
+	.line { margin: 10px 0px; }
+	.description {
+		position:absolute;
+		background-color:rgba(255,255,255,0.9);
+		bottom:1px;
+		width:100%;
+		padding: 10px;
+		h4 {
+			margin-bottom: 5px;
+		}
+		p {
+			font-size:12px;
+		}
+	}
+}
