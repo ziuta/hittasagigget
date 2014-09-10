@@ -105,6 +105,11 @@ h4 { font-size:16px; font-family:'OpenSans-Bold', 'Arial' }
 .form-control, .btn {
 	height: 42px;
 }
+.btn {
+	.transition(all,0.2s);
+	color:#FFF;
+	font-family: 'OpenSans-Bold';
+}
 .btn:focus, .btn:active {
 	outline:0px !important;
 	border:0px !important;
@@ -112,11 +117,17 @@ h4 { font-size:16px; font-family:'OpenSans-Bold', 'Arial' }
 // red button
 .btn-action {
 	background-color: #e63432;
-	.transition(all,0.2s);
-	color: #FFF;
 	&:focus, &:hover {
 		color:#FFF;
 		background-color: darken(#e63432, 10%);
+	}
+}
+// blue button
+.btn-primary {
+	background-color: #0c7abe;
+	&:focus, &:hover {
+		color:#FFF;
+		background-color: darken(#0c7abe, 10%);
 	}
 }
 //------------------------------ Thick color lines --------------------//

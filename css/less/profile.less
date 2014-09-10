@@ -11,6 +11,7 @@
 #profileDescription {
 	.leftSide {
 		bottom:220px;
+		//-- first Panel
 		.bandName, .votes { padding-bottom:10px; border-bottom:1px dashed #d5d9de }
 		.bandName {
 			h3 {  display:inline-block; font-family:'Oswald-Regular'; font-size:26px; }
@@ -20,5 +21,59 @@
 			padding-top: 10px;
 			span:last-child { float:right; }
 		}
+		.details {
+			padding-top:10px; padding-bottom:10px;
+			span:first-child { color:#9ba0aa; }
+			span:last-child { font-family: 'OpenSans-Bold'; }
+		}
+		.bandName span, .votes span:last-child { font-size:12px; }
+		.btn { width: 100%; margin-top: 10px; }
+		//-- second Panel
+		.panelSummary {
+			.panel-body { padding:0px 15px; }
+			.singleRow { padding:15px 0px; border-bottom: 1px dashed #d5d9de; }
+			.singleRow:last-child { border:none; }
+			.singleRow {
+				span:last-child { 
+					display:inline-block;
+					float:right;
+					> span {
+						display:inline-block;
+						width:auto;
+						background-color: #e4e7ec;
+						font-size:11px;
+						padding:5px;
+						border-radius:3px;
+					}
+				}
+			}
+		}
 	}
+}
+/*------------------------------------------------------------------ */
+/*------- LATEST STUFF --------------------------------------------- */
+/*------------------------------------------------------------------ */
+#latestStuff {
+
+}
+/*------------------------------------------------------------------ */
+/*------- PRESSRELEASE --------------------------------------------- */
+/*------------------------------------------------------------------ */
+#pressrelease {
+	.release {
+		border-bottom:1px dashed #d5d9de;
+		margin-top:13px;
+		&:first-child { margin-top: 0px; }
+		div {
+			display:inline-block;
+			width:70%;
+			position:relative;
+			bottom:8px;
+			padding-left:5px;
+			margin-bottom:-5px;
+			p { font-size:12px; color: #70757e; line-height:175%; }
+			span { font-size: 12px; color: #aeb2ba; font-style:italic; float:right; position:relative; bottom:15px; }
+		}
+	}
+	.btn { width: 100%; margin-top: 13px; }
 }
