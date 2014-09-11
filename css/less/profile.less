@@ -54,12 +54,51 @@
 /*------- LATEST STUFF --------------------------------------------- */
 /*------------------------------------------------------------------ */
 #latestStuff {
-
+	margin-top: 20px;
+	.panel { border-radius: 0px; border-bottom:0px; margin-bottom: 0px; }
+	h3 + .panel { border-radius:4px 4px 0px 0px }
+	.panel:last-child { border-radius:0px 0px 4px 4px; border-bottom:1px solid #DDD; }
+	h3 { padding:15px 0px 15px 0px; }
+	h3:after { content:":"; padding-left: 2px; }
+	.eventPanel {
+		padding:2px;
+		img {
+			float:left;
+			margin-right:15px;
+		}
+		header{
+			padding:10px 0px 5px 0px;
+			h4 { display:inline-block; }
+			span { float:right; }
+		}
+		.eventPlace, .eventType { display:inline-block; }
+		.eventPlace a, .eventType > span:last-child { display:block; margin-top: 10px; }
+		.eventPlace { padding: 5px 10px 5px 0px; border-right: 1px solid #bac3cc; }
+		.eventType {
+			padding: 5px 0px 5px 10px;
+			.bold { display:inline; }
+		}
+		.glyphicon { margin-right: 5px; }
+	} // event panel
+	.newSongPanel {
+		padding:20px;
+		background-color: #f8f9fa;
+		img { &:extend(#latestStuff .eventPanel img); }
+		h4 { padding:5px 0px; }
+		.date {
+			&:extend(#latestStuff .eventPanel header span);
+			position:relative;
+			bottom:7px;
+		}
+	} // add new song panel
 }
 /*------------------------------------------------------------------ */
 /*------- PRESSRELEASE --------------------------------------------- */
 /*------------------------------------------------------------------ */
 #pressrelease {
+	&:extend(#latestStuff);
+	h3 { padding:15px 0px 0px 15px }
+	h3:after { &:extend(#latestStuff h3:after); }
 	.release {
 		border-bottom:1px dashed #d5d9de;
 		margin-top:13px;
