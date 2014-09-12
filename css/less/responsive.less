@@ -139,3 +139,36 @@
 		.number { font-size:44px; }
 	}
 }
+
+/*------------------------------------------------------------------ */
+/*------- PROFILE PAGE --------------------------------------------- */
+/*------------------------------------------------------------------ */
+// @media screen and (max-width:991px) {
+// 	#profileDescription .customWidth { width: 40%;}
+// 	#pressrelease .customWidth { width:60% }
+// 	#latestStuff .customWidth { width: 60%;}
+// }
+
+@media screen and (max-width:1199px) {
+	#pressrelease .release { display:inline-block; width: 49.5%; border:none; }
+	#pressrelease .release img { float:left; }
+	#pressrelease .release div { bottom:0px; width:64% }
+	#pressrelease .btn-action {
+		position:relative;
+		bottom:17px;
+		padding:5px 22px;
+		height:47px;
+		margin:0px;
+		width:auto;
+	}
+	#latestStuff .eventPanel h4 { width:48%; }
+	#latestStuff .eventPanel header { padding: 0px 5px; }
+	#latestStuff .eventPanel .eventPlace { padding: 10px 10px 5px 0; }
+	#latestStuff .panel:last-child { margin-bottom: 40px; }
+}
+
+@media screen and (max-width:991px) {
+	#pressrelease > div, #latestStuff > div { padding-left:0px; width:62% }
+	#profileDescription .leftSide { width:38% }
+	#latestStuff span, #latestStuff a { font-size:@baseFontSize - 1px; }
+}
