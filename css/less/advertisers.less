@@ -1,0 +1,45 @@
+/*------------------------------------------------------------------ */
+/*------- UPCOMING EVENTS ------------------------------------------ */
+/*------------------------------------------------------------------ */
+#upcomingEvents {
+	padding:45px 0px 30px 0px;
+	.title {
+		font-family: 'Oswald-Bold';
+		.number { 
+			font-size:58px; float:left; margin-right: 10px; color:#cccdcf;
+			color: rgba(0,0,0,0); 
+			text-shadow: .05em .05em .05em rgba(255,255,255,.25), 0 0 0 #cbcdcf;
+		}
+		> div, .number { display:inline-block; }
+		> div {
+			span { display:inline-block; margin-top:5px; font-size:16px; font-family: 'OpenSans-Regular'; }
+			h2 { font-size:36px; position: relative; }
+		}
+	}
+	.selectBox {
+		p {
+			display:inline-block;
+			font-family:'OpenSans-Bold';
+			font-size:18px;
+			margin-right: 5px;
+		}
+	}
+	.selectBoxSecond {
+		.selectpicker { width:180px; }
+	}
+}
+/*------------------------------------------------------------------ */
+/*------- EVENT LIST ----------------------------------------------- */
+/*------------------------------------------------------------------ */
+#eventList {
+	.eventPanel { margin-bottom:0px; border-radius: 0px; border:1px solid #eceff5 }
+	.eventPanel:nth-child(even) { background-color: #f8f9fa; border:0px; border-right: 1px solid #eceff5; border-left:1px solid #eceff5; }
+	.eventPanel:first-child { border-radius:5px 5px 0px 0px }
+	.eventPanel:last-child { border-radius:0px 0px 5px 5px; margin-bottom:20px; border-bottom:1px solid #eceff5; }
+	// width declaration
+	.eventPlace { width: 19%; }
+	.eventType { width: 18%; }
+	.eventStuff { width: 12%; }
+	.eventDate { width: 20%; }
+	.viewMore { width:13%; }
+}

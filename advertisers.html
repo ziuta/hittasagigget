@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Document</title>
+	<!-- meta -->
+	<meta charset="UTF-8">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="">
+	<!-- styles -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<!-- javascripts -->
+	<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+ 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+ 	<script type="text/javascript" src="js/bootstrap-datetimepicker.min.js"></script>
+ 	<script type="text/javascript" src="js/bootstrap-select.min.js"></script>
+ 	<script type="text/javascript" src="js/scripts.js"></script>
+	<!-- favicons -->
+	<link rel="shortcut icon" href="img/favicon.ico">
+</head>
+<body>
+	<header>
+		<h2>Header</h2>
+		<nav id="mainNavigation">
+			<h2>Main Navigation</h2>
+			<div class="container">
+				<div class="speakersImage"></div>
+				<h1>Hittasagigget.se</h1>
+				<ul class="nav navbar-nav">
+					<li><a href="#">ABOUT US</a></li>
+					<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">BANDS <span class="caret"></span></a>
+						<ul class="dropdown-menu" role="menu">
+							<div class="row">
+								<div class="col-md-6">
+									<li>
+										<img src="img/coverbands.png" alt="">
+										<a href="">COVERBANDS</a>
+										<span>Total:1021</span>
+									</li>
+									<li>
+										<img src="img/dancebands.png" alt="">
+										<a href="">DANCEBANDS</a>
+										<span>Total:1021</span>
+									</li>
+									<li>
+										<img src="img/trubadurer.png" alt="">
+										<a href="">TRUBADURER</a>
+										<span>Total:1021</span>
+									</li>
+								</div>
+								<div class="col-md-6">
+									<li>
+										<img src="img/diskjockeys.png" alt="">
+										<a href="">DISKJOCKEYS</a>
+										<span>Total:1021</span>
+									</li>
+									<li>
+										<img src="img/hardrock.png" alt="">
+										<a href="">HARDROCK</a>
+										<span>Total:1021</span>
+									</li>
+									<li class="viewAll">
+										<a href="">VIEW ALL ></a>
+									</li>
+								</div>
+							</div>
+						</ul>
+					</li>
+					<li><a href="#">NIGHTCLUBS/PUBS</a></li>
+					<li><a href="#">CONTACT US</a></li>
+				</ul>
+				<div class="login">
+					<a class="joinUs" href="#">Join Us</a>
+					<a class="member" href="#"><span class="glyphicon glyphicon-user"></span>Member Login</a>
+				</div>
+			</div>
+		</nav><!-- end #mainNavigation -->
+	</header><!-- end #mainHeader -->
+	<main id="advertisersPage">
+		<section id ="upcomingEvents">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 title">
+						<div>
+							<h2>UPCOMING EVENTS</h2>
+							<span>Lorem ipsum dolor sit amet consectetur adipisicing</span>
+						</div>
+						<div class="number">24</div>
+					</div>
+					<div class="col-md-3 selectBox">
+						<p>Artist Needed:</p>
+						<select name="" id="" class="selectpicker">
+							<option value="all-artists">All Artists</option>
+							<option value="coverbands">Coverbands</option>
+						</select>
+					</div>
+					<div class="col-md-3 selectBox selectBoxSecond">
+						<p>Sort By:</p>
+						<select name="" id="" class="selectpicker">
+							<option value="all-artists">Time: Ending Soon</option>
+							<option value="coverbands">Name</option>
+						</select>
+					</div>
+				</div>
+			</div>
+		</section><!-- end #upcomingEvents -->
+		<section id="eventList">
+			<h2>Events List</h2>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="panel panel-default eventPanel">
+							<div class="panel-body">
+								<img src="" alt="">
+								<img src="img/wedding.png" alt="">
+								<header>
+									<h4>Wedding Anita and Nicolas</h4>
+								</header>
+								<div class="subPanel eventPlace">
+									<span><span class="glyphicon glyphicon-globe"></span>Stockholm, Sweden</span>
+									<a href=""><span class="glyphicon glyphicon-user"></span>Anita Lourence</a>
+								</div>
+								<div class="subPanel eventType">
+									<span>Type: <span class="bold">Wedding</span></span>
+									<span><span class="hidden-sm hidden-xs">Numbers of </span>Guests: <span class="bold">70</span></span>
+								</div>
+								<div class="subPanel eventStuff">
+									<span>Audio eq: <span class="bold">No</span></span>
+									<span>Lighting: <span class="bold">Yes</span></span>
+								</div>
+								<div class="subPanel eventDate">
+									<span>Start Time: <span class="bold">16:00 - 28/08/2014</span></span>
+									<span>End time: <span class="bold">23:00 - 28/08/2014</span></span>
+								</div>
+								<div class="subPanel viewMore">
+									<a href="">View More</a>
+								</div>
+								<footer>
+									<span class="label label-default">Dj</span>
+									<span class="label label-default">Acustic</span>
+									<span class="label label-default">Band</span>
+								</footer>
+							</div>
+						</div><!-- SINGLE EVENT PANEL -->
+						<div class="panel panel-default eventPanel">
+							<div class="panel-body">
+								<img src="" alt="">
+								<img src="img/bar.png" alt="">
+								<header>
+									<h4>"Oktoberfest"</h4>
+								</header>
+								<div class="subPanel eventPlace">
+									<span><span class="glyphicon glyphicon-globe"></span>Stockholm, Sweden</span>
+									<a href=""><span class="glyphicon glyphicon-user"></span>Beer Pub</a>
+								</div>
+								<div class="subPanel eventType">
+									<span>Type: <span class="bold">Pub</span></span>
+									<span><span class="hidden-sm hidden-xs">Numbers of </span>Guests: <span class="bold">350</span></span>
+								</div>
+								<div class="subPanel eventStuff">
+									<span>Audio eq: <span class="bold">Yes</span></span>
+									<span>Lighting: <span class="bold">Yes</span></span>
+								</div>
+								<div class="subPanel eventDate">
+									<span>Start Time: <span class="bold">16:00 - 28/08/2014</span></span>
+									<span>End time: <span class="bold">23:00 - 28/08/2014</span></span>
+								</div>
+								<div class="subPanel viewMore">
+									<a href="">View More</a>
+								</div>
+								<footer>
+									<span class="label label-default">Acustic</span>
+									<span class="label label-default">Band</span>
+								</footer>
+							</div>
+						</div><!-- SINGLE EVENT PANEL -->
+						<div class="panel panel-default eventPanel">
+							<div class="panel-body">
+								<img src="" alt="">
+								<img src="img/party.png" alt="">
+								<header>
+									<h4>Party up! Time to GO!</h4>
+								</header>
+								<div class="subPanel eventPlace">
+									<span><span class="glyphicon glyphicon-globe"></span>Stockholm, Sweden</span>
+									<a href=""><span class="glyphicon glyphicon-user"></span>Party Club</a>
+								</div>
+								<div class="subPanel eventType">
+									<span>Type: <span class="bold">nightclub</span></span>
+									<span><span class="hidden-sm hidden-xs">Numbers of </span>Guests: <span class="bold">740</span></span>
+								</div>
+								<div class="subPanel eventStuff">
+									<span>Audio eq: <span class="bold">Yes</span></span>
+									<span>Lighting: <span class="bold">Yes</span></span>
+								</div>
+								<div class="subPanel eventDate">
+									<span>Start Time: <span class="bold">16:00 - 28/08/2014</span></span>
+									<span>End time: <span class="bold">23:00 - 28/08/2014</span></span>
+								</div>
+								<div class="subPanel viewMore">
+									<a href="">View More</a>
+								</div>
+								<footer>
+									<span class="label label-default">Dj</span>
+									<span class="label label-default">Acustic</span>
+									<span class="label label-default">Band</span>
+								</footer>
+							</div>
+						</div><!-- SINGLE EVENT PANEL -->
+						<div class="panel panel-default eventPanel">
+							<div class="panel-body">
+								<img src="" alt="">
+								<img src="img/villa.png" alt="">
+								<header>
+									<h4>Happy B.Day Mike!</h4>
+								</header>
+								<div class="subPanel eventPlace">
+									<span><span class="glyphicon glyphicon-globe"></span>Stockholm, Sweden</span>
+									<a href=""><span class="glyphicon glyphicon-user"></span>Martin</a>
+								</div>
+								<div class="subPanel eventType">
+									<span>Type: <span class="bold">Birthday</span></span>
+									<span><span class="hidden-sm hidden-xs">Numbers of </span>Guests: <span class="bold">25</span></span>
+								</div>
+								<div class="subPanel eventStuff">
+									<span>Audio eq: <span class="bold">No</span></span>
+									<span>Lighting: <span class="bold">No</span></span>
+								</div>
+								<div class="subPanel eventDate">
+									<span>Start Time: <span class="bold">16:00 - 28/08/2014</span></span>
+									<span>End time: <span class="bold">23:00 - 28/08/2014</span></span>
+								</div>
+								<div class="subPanel viewMore">
+									<a href="">View More</a>
+								</div>
+								<footer>
+									<span class="label label-default">Acustic</span>
+									<span class="label label-default">Band</span>
+								</footer>
+							</div>
+						</div><!-- SINGLE EVENT PANEL -->
+						<div class="panel panel-default eventPanel">
+							<div class="panel-body">
+								<img src="" alt="">
+								<img src="img/wedding.png" alt="">
+								<header>
+									<h4>Wedding Anita and Nicolas</h4>
+								</header>
+								<div class="subPanel eventPlace">
+									<span><span class="glyphicon glyphicon-globe"></span>Stockholm, Sweden</span>
+									<a href=""><span class="glyphicon glyphicon-user"></span>Anita Lourence</a>
+								</div>
+								<div class="subPanel eventType">
+									<span>Type: <span class="bold">Wedding</span></span>
+									<span><span class="hidden-sm hidden-xs">Numbers of </span>Guests: <span class="bold">70</span></span>
+								</div>
+								<div class="subPanel eventStuff">
+									<span>Audio eq: <span class="bold">No</span></span>
+									<span>Lighting: <span class="bold">Yes</span></span>
+								</div>
+								<div class="subPanel eventDate">
+									<span>Start Time: <span class="bold">16:00 - 28/08/2014</span></span>
+									<span>End time: <span class="bold">23:00 - 28/08/2014</span></span>
+								</div>
+								<div class="subPanel viewMore">
+									<a href="">View More</a>
+								</div>
+								<footer>
+									<span class="label label-default">Dj</span>
+									<span class="label label-default">Acustic</span>
+									<span class="label label-default">Band</span>
+								</footer>
+							</div>
+						</div><!-- SINGLE EVENT PANEL -->
+						<div class="panel panel-default eventPanel">
+							<div class="panel-body">
+								<img src="" alt="">
+								<img src="img/bar.png" alt="">
+								<header>
+									<h4>"Oktoberfest"</h4>
+								</header>
+								<div class="subPanel eventPlace">
+									<span><span class="glyphicon glyphicon-globe"></span>Stockholm, Sweden</span>
+									<a href=""><span class="glyphicon glyphicon-user"></span>Beer Pub</a>
+								</div>
+								<div class="subPanel eventType">
+									<span>Type: <span class="bold">Pub</span></span>
+									<span><span class="hidden-sm hidden-xs">Numbers of </span>Guests: <span class="bold">350</span></span>
+								</div>
+								<div class="subPanel eventStuff">
+									<span>Audio eq: <span class="bold">Yes</span></span>
+									<span>Lighting: <span class="bold">Yes</span></span>
+								</div>
+								<div class="subPanel eventDate">
+									<span>Start Time: <span class="bold">16:00 - 28/08/2014</span></span>
+									<span>End time: <span class="bold">23:00 - 28/08/2014</span></span>
+								</div>
+								<div class="subPanel viewMore">
+									<a href="">View More</a>
+								</div>
+								<footer>
+									<span class="label label-default">Acustic</span>
+									<span class="label label-default">Band</span>
+								</footer>
+							</div>
+						</div><!-- SINGLE EVENT PANEL -->
+						<div class="panel panel-default eventPanel">
+							<div class="panel-body">
+								<img src="" alt="">
+								<img src="img/party.png" alt="">
+								<header>
+									<h4>Party up! Time to GO!</h4>
+								</header>
+								<div class="subPanel eventPlace">
+									<span><span class="glyphicon glyphicon-globe"></span>Stockholm, Sweden</span>
+									<a href=""><span class="glyphicon glyphicon-user"></span>Party Club</a>
+								</div>
+								<div class="subPanel eventType">
+									<span>Type: <span class="bold">nightclub</span></span>
+									<span><span class="hidden-sm hidden-xs">Numbers of </span>Guests: <span class="bold">740</span></span>
+								</div>
+								<div class="subPanel eventStuff">
+									<span>Audio eq: <span class="bold">Yes</span></span>
+									<span>Lighting: <span class="bold">Yes</span></span>
+								</div>
+								<div class="subPanel eventDate">
+									<span>Start Time: <span class="bold">16:00 - 28/08/2014</span></span>
+									<span>End time: <span class="bold">23:00 - 28/08/2014</span></span>
+								</div>
+								<div class="subPanel viewMore">
+									<a href="">View More</a>
+								</div>
+								<footer>
+									<span class="label label-default">Dj</span>
+									<span class="label label-default">Acustic</span>
+									<span class="label label-default">Band</span>
+								</footer>
+							</div>
+						</div><!-- SINGLE EVENT PANEL -->
+						<div class="panel panel-default eventPanel">
+							<div class="panel-body">
+								<img src="" alt="">
+								<img src="img/villa.png" alt="">
+								<header>
+									<h4>Happy B.Day Mike!</h4>
+								</header>
+								<div class="subPanel eventPlace">
+									<span><span class="glyphicon glyphicon-globe"></span>Stockholm, Sweden</span>
+									<a href=""><span class="glyphicon glyphicon-user"></span>Martin</a>
+								</div>
+								<div class="subPanel eventType">
+									<span>Type: <span class="bold">Birthday</span></span>
+									<span><span class="hidden-sm hidden-xs">Numbers of </span>Guests: <span class="bold">25</span></span>
+								</div>
+								<div class="subPanel eventStuff">
+									<span>Audio eq: <span class="bold">No</span></span>
+									<span>Lighting: <span class="bold">No</span></span>
+								</div>
+								<div class="subPanel eventDate">
+									<span>Start Time: <span class="bold">16:00 - 28/08/2014</span></span>
+									<span>End time: <span class="bold">23:00 - 28/08/2014</span></span>
+								</div>
+								<div class="subPanel viewMore">
+									<a href="">View More</a>
+								</div>
+								<footer>
+									<span class="label label-default">Acustic</span>
+									<span class="label label-default">Band</span>
+								</footer>
+							</div>
+						</div><!-- SINGLE EVENT PANEL -->
+					</div>
+				</div>
+			</div>
+		</section><!-- Events List -->
+		<section id="links">
+			<h2>Links</h2>
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-2 customWidth">
+						<h3>ABOUT US</h3>
+						<ul>
+							<li><a href="">What We Do?</a></li>
+							<li><a href="">Privacy Policy</a></li>
+							<li><a href="">Terms of Us</a></li>
+							<li><a href="">Contact</a></li>
+						</ul>
+					</div>
+					<div class="col-sm-2 customWidth">
+						<h3>BANDS</h3>
+						<ul>
+							<li><a href="">Coverbands</a></li>
+							<li><a href="">DJ's</a></li>
+							<li><a href="">Danceband</a></li>
+							<li><a href="">Hardroch</a></li>
+							<li><a href="">Trubadurer</a></li>
+						</ul>
+					</div>
+					<div class="col-sm-2 customWidth">
+						<h3>NIGHTCLUBS</h3>
+						<ul>
+							<li><a href="">Coverbands</a></li>
+							<li><a href="">DJ's</a></li>
+							<li><a href="">Danceband</a></li>
+							<li><a href="">Hardroch</a></li>
+							<li><a href="">Trubadurer</a></li>
+						</ul>
+					</div>
+					<div class="col-sm-2 customWidth pubs">
+						<h3>PUBS</h3>
+						<ul>
+							<li><a href="">Coverbands</a></li>
+							<li><a href="">DJ's</a></li>
+							<li><a href="">Danceband</a></li>
+							<li><a href="">Hardroch</a></li>
+							<li><a href="">Trubadurer</a></li>
+						</ul>
+					</div>
+					<div class="col-sm-2 customWidth">
+						<h3>CONTACT US:</h3>
+						<ul>
+							<li>Hittasagiget.se</li>
+							<li>Lorem Ipsum Street number 23</li>
+							<li>Stockholm, Sweden</li>
+							<li>1-900-202-011</li>
+							<li><a class="mailTo" href="mailto:info@hittasagiget.se">info@hittasagiget.se</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section><!-- end #links -->
+	</main>
+	<footer id="mainFooter">
+		<h2>Footer</h2>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="socialIcons">
+						<span>SOCIAL:</span>
+						<a href="" class="icon facebook"></a>
+						<a href="" class="icon twitter"></a>
+						<a href="" class="icon google"></a>
+					</div>
+					<span>2014. All right Reserved</span>
+				</div>
+			</div>
+		</div>
+	</footer><!-- end #mainFooter -->
+</body>
+</html>

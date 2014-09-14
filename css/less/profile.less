@@ -61,33 +61,13 @@
 	.panel:last-child { border-radius:0px 0px 4px 4px; border-bottom:1px solid #DDD; }
 	h3 { padding:15px 0px 15px 0px; }
 	h3:after { content:":"; padding-left: 2px; }
-	.eventPanel {
-		padding:2px;
-		img {
-			float:left;
-			margin-right:15px;
-		}
-		header{
-			padding:10px 0px 5px 0px;
-			h4 { display:inline-block; }
-			span { float:right; }
-		}
-		.eventPlace, .eventType { display:inline-block; }
-		.eventPlace a, .eventType > span:last-child { display:block; margin-top: 10px; }
-		.eventPlace { padding: 5px 10px 5px 0px; border-right: 1px solid #bac3cc; }
-		.eventType {
-			padding: 5px 0px 5px 10px;
-			.bold { display:inline; }
-		}
-		.glyphicon { margin-right: 5px; }
-	} // event panel
 	.newSongPanel {
 		padding:20px;
 		background-color: #f8f9fa;
 		img { float:left; margin-right:15px; }
 		h4 { padding:5px 0px; }
 		.date {
-			&:extend(#latestStuff .eventPanel header span);
+			float:right;;
 			position:relative;
 			bottom:7px;
 		}

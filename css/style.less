@@ -14,7 +14,15 @@ Last change:	07/09/14 [Homepage styling]
 	4. MIXINS
 	5. OUTLINER
 	6. GLOBAL STYLES / <body>
-	7. COMMON CLASSES / common to the whole project 
+	7. COMMON CLASSES / common to the whole project
+		7.1 Bootstrap Select
+		7.2 Datepicker
+		7.3 Headers
+		7.4 Text formatting
+		7.5 Buttons & Inputs
+		7.6 Labels
+		7.7 Thick color lines
+		7.8 Event Panels
 	8. IMPORTS
 
 /*======================================================================================== */
@@ -94,17 +102,41 @@ body {
 	font-size:@baseFontSize;
 	overflow-x:hidden;
 }
+:focus { outline:0px; }
 /*======================================================================================== */
 /*===== 7. COMMON CLASSES ================================================================ */
 /*======================================================================================== */
-//-------------------------------- Headers ------------------------------//
+//--------------------------- 7.1 Boostrap Select -----------------------//
+@import "bootstrap-select.min.css";
+.bootstrap-select .btn-default { .gradient(#FFF, #f2f2f2); color:#70757e; width: 120px; font-family:'OpenSans-Regular'; outline:0px; }
+.bootstrap-select .btn:focus { outline:0px !important; border:1px solid #adadad }
+.bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) { width:auto; }
+//--------------------------- 7.2 Datepicker --------------------------//
+@import "bootstrap-datetimepicker.min.css";
+.datepicker {
+	padding: 5px;
+	tr {
+		th { font-family: 'Oswald-Bold'; vertical-align:middle; padding-bottom:8px; }
+		th.dow { font-family: 'Oswald-Bold' }
+		td { font-family: 'Oswald-Regular' }
+	}
+	.table-condensed>thead>tr>th,
+	.table-condensed>tbody>tr>th,
+	.table-condensed>tfoot>tr>th,
+	.table-condensed>thead>tr>td,
+	.table-condensed>tbody>tr>td,
+	.table-condensed>tfoot>tr>td { padding: 7px; }
+	.table-condensed>thead>tr>th.prev,
+	.table-condensed>thead>tr>th.next { padding-bottom:10px; }
+}
+//---------------------------- 7.3 Headers ------------------------------//
 // <h2> tag engaged for outliner
 h3 { font-size:@baseFontSize + 10px; font-family:'Oswald-Bold', 'Arial' }
 h4 { font-size:@baseFontSize + 2px; font-family:'OpenSans-Bold', 'Arial' }
 
-//------------------------------- Text formatting ----------------------//
+//---------------------------- 7.4 Text formatting ----------------------//
 .bold { font-family:'OpenSans-Bold' }
-//------------------------------- Buttons & Inputs ---------------------//
+//---------------------------- 7.5 Buttons & Inputs ---------------------//
 .form-control, .btn {
 	height: 42px;
 }
@@ -133,7 +165,9 @@ h4 { font-size:@baseFontSize + 2px; font-family:'OpenSans-Bold', 'Arial' }
 		background-color: darken(#0c7abe, 10%);
 	}
 }
-//------------------------------ Thick color lines --------------------//
+//--------------------------- 7.6 Labels -------------------------------//
+.label-default { background-color: #e4e7ec; color: #70757e; }
+//--------------------------- 7.7 Thick color lines --------------------//
 // example - homepage #numbers section
 .line {
 	width:40px;
@@ -145,29 +179,45 @@ h4 { font-size:@baseFontSize + 2px; font-family:'OpenSans-Bold', 'Arial' }
 .lineLightBlue { background-color: @linkColor; }
 .lineRed { background-color: #d82f2d; }
 .lineGray { background-color: #bbd4ed; }
-//------------------------------ Datepicker --------------------------//
-.datepicker {
-	padding: 5px;
-	tr {
-		th { font-family: 'Oswald-Bold'; vertical-align:middle; padding-bottom:8px; }
-		th.dow { font-family: 'Oswald-Bold' }
-		td { font-family: 'Oswald-Regular' }
+//--------------------------- 7.8 Event Panels ------------------------//
+// Example: "advertisers.html" (upcoming events list) or "profile.html" latest stuff section
+.eventPanel {
+	padding:2px;
+	img {
+		float:left;
+		margin-right:15px;
 	}
-	.table-condensed>thead>tr>th,
-	.table-condensed>tbody>tr>th,
-	.table-condensed>tfoot>tr>th,
-	.table-condensed>thead>tr>td,
-	.table-condensed>tbody>tr>td,
-	.table-condensed>tfoot>tr>td { padding: 7px; }
-	.table-condensed>thead>tr>th.prev,
-	.table-condensed>thead>tr>th.next { padding-bottom:10px; }
+	header{
+		padding:10px 0px 5px 0px;
+		h4 { display:inline-block; }
+		span { float:right; }
+	}
+	.subPanel {
+		border-right: 1px solid #bac3cc; padding: 5px 10px; display:inline-block; color:#787d86;
+		.bold { display:inline; color:#373a3f; }
+	}
+	.subPanel:last-child { border-right:0px; padding: 5px 0px 5px 10px; }
+	.eventPlace { padding: 5px 10px 5px 0px; }
+	.subPanel a, .subPanel > span:last-child { display:block; margin-top: 10px; }
+	.glyphicon { margin-right: 5px; color: #787d86 }
+	a:hover > .glyphicon { color:#787d86 }
+	.viewMore { border:0px; margin-top:0px; position:relative; bottom:10px; text-align:center; padding-right:0px; }
+	footer { margin-top: 10px; }
 }
+/* --- If no seperation between panels is needed add this code to your page styles:
+
+	.eventPanel { margin-bottom:0px; border-radius: 0px; border:1px solid #eceff5 }
+	.eventPanel:nth-child(even) { background-color: #f8f9fa; border:0px; border-right: 1px solid #eceff5; border-left:1px solid #eceff5; }
+	.eventPanel:first-child { border-radius:5px 5px 0px 0px }
+	.eventPanel:last-child { border-radius:0px 0px 5px 5px; margin-bottom:20px; border-bottom:1px solid #eceff5; }
+
+------ */
 /*======================================================================================== */
 /*===== 8. IMPORTS ======================================================================= */
 /*======================================================================================== */
-@import "bootstrap-datetimepicker.min.css";
 @import "less/header.less";
 @import "less/footer.less";
 @import "less/homepage.less";
 @import "less/profile.less";
+@import "less/advertisers.less";
 @import "less/responsive.less";
