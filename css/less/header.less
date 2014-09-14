@@ -94,3 +94,19 @@
 		.joinUs, .member { color:#FFF; text-decoration:none; }
 	}
 }
+/*------------------------------------------------------------------ */
+/*------- MOBILE --------------------------------------------------- */
+/*------------------------------------------------------------------ */
+.mobileNavigation { display: none; }
+@media screen and (max-width:768px) {
+	.mobileNavigation { display: block; }
+	nav .icon-bar { background-color: #FFF; }
+	nav .navbar-toggle { margin-top: 4px; margin-left: 15px; }
+	.navbar-collapse { margin: 0px -30px; }
+	#mainNavigation .navbar-collapse .login, #mainNavigation .navbar-collapse .speakersImage, #mainNavigation .navbar-collapse h1 { display:none; }
+	#mainNavigation .container { padding:0px; }
+	#mainNavigation .nav {
+		z-index:1; background-color: #1a1a1b; margin-top: 11px;
+		li a { text-align: center; }
+	}
+}
