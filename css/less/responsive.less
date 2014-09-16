@@ -174,20 +174,30 @@
 	#latestStuff span, #latestStuff a { font-size:@baseFontSize - 1px; }
 }
 @media screen and (max-width:767px) {
-	#pressrelease > div, #latestStuff > div { padding-left:15px; width:100% }
-	#pressrelease > .pull-right { float:none!important; }
-	#pressrelease .panel { margin-bottom: 0px; }
+	// #pressrelease > div, #latestStuff > div { padding-left:15px; width:100% }
+	// #pressrelease > .pull-right { float:none!important; }
+	// #pressrelease .panel { margin-bottom: 0px; }
+	// #pressrelease .release { width: 100%; }
+	// #pressrelease .btn-action { margin-top: 30px; }
+	// #profileDescription { margin-bottom: -215px; }
+	// #profileDescription .leftSide { width:100%; float:none; }
+	// #latestStuff { margin-top: 0px; }
+	// #latestStuff span, #latestStuff a { font-size:@baseFontSize; }
+	// #latestStuff .eventPanel img { width: 80px; }
+
+	// #pressrelease .release { width: 100%; }
+	#profileDescription .leftSide { width:50%; float:left; margin-bottom: -220px; }
+	#profileDescription .panelSummary { display:none; }
+	#pressrelease > div { width: 50%; }
 	#pressrelease .release { width: 100%; }
 	#pressrelease .btn-action { margin-top: 30px; }
 	#pressrelease .panel-body { padding-bottom: 0px; }
-	#profileDescription { margin-bottom: -215px; }
-	#profileDescription .leftSide { width:100%; float:none; }
-	#latestStuff { margin-top: 0px; }
-	#latestStuff span, #latestStuff a { font-size:@baseFontSize; }
-	#latestStuff .eventPanel img { width: 80px; }
-	// #pressrelease .release { width: 100%; }
-	// #pressrelease .btn-action { margin-top: 30px; }
+	#pressrelease .panel { margin-bottom: 0px; }
+	#latestStuff > div { width:100%; float:right; padding-left: 15px; }
 }
+
+
+
 @media screen and (max-width:639px) {
 	#latestStuff span, #latestStuff a { font-size:@baseFontSize - 1px; }
 	
@@ -201,6 +211,10 @@
 	#latestStuff .newSongPanel img { margin-top: 5px; }
 	
 	#profilePage .panel-body { padding:10px; }
+}
+@media screen and (max-width:520px) {
+	#profileDescription .leftSide, #pressrelease > div, #latestStuff > div { width: 100%; }
+	#latestStuff .eventPanel img { width: 80px; }
 }
 @media screen and (max-width:359px) {
 	#latestStuff .eventPanel { position:relative; }
