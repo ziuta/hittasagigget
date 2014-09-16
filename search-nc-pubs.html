@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Document</title>
+	<!-- meta -->
+	<meta charset="UTF-8">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="">
+	<!-- styles -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<!-- javascripts -->
+	<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+ 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+ 	<script type="text/javascript" src="js/bootstrap-datetimepicker.min.js"></script>
+ 	<script type="text/javascript" src="js/scripts.js"></script>
+	<!-- favicons -->
+	<link rel="shortcut icon" href="img/favicon.ico">
+</head>
+<body>
+	<header>
+		<h2>Header</h2>
+		<nav id="mainNavigation">
+			<h2>Main Navigation</h2>
+			<div class="container">
+				<!-- mobile menu -->
+				<div class="mobileNavigation">
+					<div class="navbar-header">
+				    	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#responsiveMenu">
+					        <span class="sr-only">Toggle navigation</span>
+					        <span class="icon-bar"></span>
+					        <span class="icon-bar"></span>
+					        <span class="icon-bar"></span>
+				    	</button>
+						<div class="login">
+							<a class="joinUs" href="#">Join Us</a>
+							<a class="member" href="#"><span class="glyphicon glyphicon-user"></span>Member Login</a>
+						</div>
+				    	<div class="speakersImage"></div>
+						<h1>Hittasagigget.se</h1>
+				    </div>
+				</div>
+    			<!-- desktop menu -->
+    			<div class="collapse navbar-collapse" id="responsiveMenu">
+					<div class="speakersImage"></div>
+					<h1>Hittasagigget.se</h1>
+					<ul class="nav navbar-nav">
+						<li><a href="#">ABOUT US</a></li>
+						<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">BANDS <span class="caret"></span></a>
+							<ul class="dropdown-menu" role="menu">
+								<div class="row">
+									<div class="col-md-6">
+										<li>
+											<img src="img/coverbands.png" alt="">
+											<a href="">COVERBANDS</a>
+											<span>Total:1021</span>
+										</li>
+										<li>
+											<img src="img/dancebands.png" alt="">
+											<a href="">DANCEBANDS</a>
+											<span>Total:1021</span>
+										</li>
+										<li>
+											<img src="img/trubadurer.png" alt="">
+											<a href="">TRUBADURER</a>
+											<span>Total:1021</span>
+										</li>
+									</div>
+									<div class="col-md-6">
+										<li>
+											<img src="img/diskjockeys.png" alt="">
+											<a href="">DISKJOCKEYS</a>
+											<span>Total:1021</span>
+										</li>
+										<li class="width768">
+											<img src="img/hardrock.png" alt="">
+											<a href="">HARDROCK</a>
+											<span>Total:1021</span>
+										</li>
+										<li class="viewAll">
+											<a href="">VIEW ALL ></a>
+										</li>
+									</div>
+								</div>
+							</ul>
+						</li>
+						<li><a href="#">NIGHTCLUBS/PUBS</a></li>
+						<li><a href="#">CONTACT US</a></li>
+						<li class="memberLoginResponsive"><a class="member btn btn-primary" href="#"><span class="glyphicon glyphicon-user"></span>Member Login</a></li>
+					</ul>
+					<div class="login">
+						<a class="joinUs" href="#">Join Us</a>
+						<a class="member" href="#"><span class="glyphicon glyphicon-user"></span>Member Login</a>
+					</div>
+				</div>
+			</div>
+		</nav><!-- end #mainNavigation -->
+	</header><!-- end #mainHeader -->
+	<main id="searchPubsPage">
+		<section id="nightclubsSearch">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-7 title">
+						<div>
+							<h2>NIGHTCLUBS/PUBS IN SWEDEN</h2>
+							<span>Lorem ipsum dolor sit amet consectetur adipisicing</span>
+						</div>
+						<div class="number">1,980</div>
+					</div>
+					<div class="col-md-5">
+						<input type="text" class="form-control" id="pubsSearchInput">
+						<button class="btn btn-action">FIND NOW!</button>
+					</div>
+				</div>
+			</div>
+		</section><!-- end #nightclubsSearch -->
+		<section id="googleMaps">
+			
+		</section><!-- end #googleMaps -->
+		<section id="searchResults">
+			<h2>Most popular</h2>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-9" id="resultList">
+						<div class="row">
+							<div class="col-md-9">
+								<span class="title">SEARCH RESULTS:</span>
+								<div class="line lineRed"></div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-4 col-sm-6 popularBand">
+								<img src="img/beer.png" alt="">
+								<div class="description">
+									<h4>Swedish Pub</h4>
+									<p>Address of this Pub or Club</p>
+								</div>
+							</div>
+							<div class="col-md-4 col-sm-6 popularBand">
+								<img src="img/sherlock.png" alt="">
+								<div class="description">
+									<h4>Swedish Pub</h4>
+									<p>Address of this Pub or Club</p>
+								</div>
+							</div>
+							<div class="col-md-4 col-sm-6 popularBand">
+								<img src="img/pub-inside.png" alt="">
+								<div class="description">
+									<h4>Swedish Pub</h4>
+									<p>Address of this Pub or Club</p>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-4 col-sm-6 popularBand">
+								<img src="img/pub-exclusive.png" alt="">
+								<div class="description">
+									<h4>Swedish Pub</h4>
+									<p>Address of this Pub or Club</p>
+								</div>
+							</div>
+							<div class="col-md-4 col-sm-6 popularBand">
+								<img src="img/pub-modern.png" alt="">
+								<div class="description">
+									<h4>Swedish Pub</h4>
+									<p>Address of this Pub or Club</p>
+								</div>
+							</div>
+							<div class="col-md-4 col-sm-6 popularBand">
+								<img src="img/pub-oriental.png" alt="">
+								<div class="description">
+									<h4>Swedish Pub</h4>
+									<p>Address of this Pub or Club</p>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-4 col-sm-6 popularBand">
+								<img src="img/beer.png" alt="">
+								<div class="description">
+									<h4>Swedish Pub</h4>
+									<p>Address of this Pub or Club</p>
+								</div>
+							</div>
+							<div class="col-md-4 col-sm-6 popularBand">
+								<img src="img/sherlock.png" alt="">
+								<div class="description">
+									<h4>Swedish Pub</h4>
+									<p>Address of this Pub or Club</p>
+								</div>
+							</div>
+							<div class="col-md-4 col-sm-6 popularBand">
+								<img src="img/pub-inside.png" alt="">
+								<div class="description">
+									<h4>Swedish Pub</h4>
+									<p>Address of this Pub or Club</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3" id="searchFilters">
+						<div class="row">
+							<div class="col-md-12">
+								<span class="title">SEARCH FILTERS:</span>
+								<div class="line lineRed"></div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<span class="category">Show:</span>
+								<div class="claerfix"></div>
+								<input type="checkbox" id="all"><label for="all">ALL</label>
+								<div class="claerfix"></div>
+								<input type="checkbox" id="pubs"><label for="pubs">Pubs</label>
+								<div class="claerfix"></div>
+								<input type="checkbox" id="nightclubs"><label for="nightclubs">Nightclubs</label>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<span class="category">Capacity:</span>
+								<div class="claerfix"></div>
+								<input type="checkbox" id="under50"><label for="under50">Under 50 People</label>
+								<div class="claerfix"></div>
+								<input type="checkbox" id="50b150"><label for="50b150">50 - 150 People</label>
+								<div class="claerfix"></div>
+								<input type="checkbox" id="150b350"><label for="150b350">150 - 350 People</label>
+								<div class="claerfix"></div>
+								<input type="checkbox" id="350more"><label for="350more">350 and More</label>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section><!-- end #mostPopular -->
+		<section id="links">
+			<h2>Links</h2>
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-2 customWidth">
+						<h3>ABOUT US</h3>
+						<ul>
+							<li><a href="">What We Do?</a></li>
+							<li><a href="">Privacy Policy</a></li>
+							<li><a href="">Terms of Us</a></li>
+							<li><a href="">Contact</a></li>
+						</ul>
+					</div>
+					<div class="col-sm-2 customWidth">
+						<h3>BANDS</h3>
+						<ul>
+							<li><a href="">Coverbands</a></li>
+							<li><a href="">DJ's</a></li>
+							<li><a href="">Danceband</a></li>
+							<li><a href="">Hardroch</a></li>
+							<li><a href="">Trubadurer</a></li>
+						</ul>
+					</div>
+					<div class="col-sm-2 customWidth">
+						<h3>NIGHTCLUBS</h3>
+						<ul>
+							<li><a href="">Coverbands</a></li>
+							<li><a href="">DJ's</a></li>
+							<li><a href="">Danceband</a></li>
+							<li><a href="">Hardroch</a></li>
+							<li><a href="">Trubadurer</a></li>
+						</ul>
+					</div>
+					<div class="col-sm-2 customWidth pubs">
+						<h3>PUBS</h3>
+						<ul>
+							<li><a href="">Coverbands</a></li>
+							<li><a href="">DJ's</a></li>
+							<li><a href="">Danceband</a></li>
+							<li><a href="">Hardroch</a></li>
+							<li><a href="">Trubadurer</a></li>
+						</ul>
+					</div>
+					<div class="col-sm-2 customWidth">
+						<h3>CONTACT US:</h3>
+						<ul>
+							<li>Hittasagiget.se</li>
+							<li>Lorem Ipsum Street number 23</li>
+							<li>Stockholm, Sweden</li>
+							<li>1-900-202-011</li>
+							<li><a class="mailTo" href="mailto:info@hittasagiget.se">info@hittasagiget.se</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section><!-- end #links -->
+	</main>
+	<footer id="mainFooter">
+		<h2>Footer</h2>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="socialIcons">
+						<span>SOCIAL:</span>
+						<a href="" class="icon facebook"></a>
+						<a href="" class="icon twitter"></a>
+						<a href="" class="icon google"></a>
+					</div>
+					<span>2014. All right Reserved</span>
+				</div>
+			</div>
+		</div>
+	</footer><!-- end #mainFooter -->
+</body>
+</html>
