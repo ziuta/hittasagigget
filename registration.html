@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Document</title>
+	<!-- meta -->
+	<meta charset="UTF-8">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="">
+	<!-- styles -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<!-- javascripts -->
+	<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+ 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+ 	<script type="text/javascript" src="js/bootstrap-datetimepicker.min.js"></script>
+ 	<script type="text/javascript" src="js/scripts.js"></script>
+	<!-- favicons -->
+	<link rel="shortcut icon" href="img/favicon.ico">
+</head>
+<body>
+	<header>
+		<h2>Header</h2>
+		<nav id="mainNavigation">
+			<h2>Main Navigation</h2>
+			<div class="container">
+				<!-- mobile menu -->
+				<div class="mobileNavigation">
+					<div class="navbar-header">
+				    	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#responsiveMenu">
+					        <span class="sr-only">Toggle navigation</span>
+					        <span class="icon-bar"></span>
+					        <span class="icon-bar"></span>
+					        <span class="icon-bar"></span>
+				    	</button>
+						<div class="login">
+							<a class="joinUs" href="#">Join Us</a>
+							<a class="member" href="#"><span class="glyphicon glyphicon-user"></span>Member Login</a>
+						</div>
+				    	<div class="speakersImage"></div>
+						<h1>Hittasagigget.se</h1>
+				    </div>
+				</div>
+    			<!-- desktop menu -->
+    			<div class="collapse navbar-collapse" id="responsiveMenu">
+					<div class="speakersImage"></div>
+					<h1>Hittasagigget.se</h1>
+					<ul class="nav navbar-nav">
+						<li><a href="#">ABOUT US</a></li>
+						<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">BANDS <span class="caret"></span></a>
+							<ul class="dropdown-menu" role="menu">
+								<div class="row">
+									<div class="col-md-6">
+										<li>
+											<img src="img/coverbands.png" alt="">
+											<a href="">COVERBANDS</a>
+											<span>Total:1021</span>
+										</li>
+										<li>
+											<img src="img/dancebands.png" alt="">
+											<a href="">DANCEBANDS</a>
+											<span>Total:1021</span>
+										</li>
+										<li>
+											<img src="img/trubadurer.png" alt="">
+											<a href="">TRUBADURER</a>
+											<span>Total:1021</span>
+										</li>
+									</div>
+									<div class="col-md-6">
+										<li>
+											<img src="img/diskjockeys.png" alt="">
+											<a href="">DISKJOCKEYS</a>
+											<span>Total:1021</span>
+										</li>
+										<li class="width768">
+											<img src="img/hardrock.png" alt="">
+											<a href="">HARDROCK</a>
+											<span>Total:1021</span>
+										</li>
+										<li class="viewAll">
+											<a href="">VIEW ALL ></a>
+										</li>
+									</div>
+								</div>
+							</ul>
+						</li>
+						<li><a href="#">NIGHTCLUBS/PUBS</a></li>
+						<li><a href="#">CONTACT US</a></li>
+						<li class="memberLoginResponsive"><a class="member btn btn-primary" href="#"><span class="glyphicon glyphicon-user"></span>Member Login</a></li>
+					</ul>
+					<div class="login">
+						<a class="joinUs" href="#">Join Us</a>
+						<a class="member" href="#"><span class="glyphicon glyphicon-user"></span>Member Login</a>
+					</div>
+				</div>
+			</div>
+		</nav><!-- end #mainNavigation -->
+	</header><!-- end #mainHeader -->
+	<main id="registrationPage">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h2>NEW USER REGISTRATION</h2>
+				</div>
+			</div><!-- end of title .row -->
+			<div class="row">
+				<div class="col-md-6 col-md-offset-3">
+					<section class="registrationFormWrapper">
+						<h2>Registration Form</h2>
+						<form action="" id="registrationForm" class="registrationForm">
+							<div class="inputsWrapper">
+								<span class="glyphicon glyphicon-music"></span>
+								<div class="row">
+									<div class="col-sm-6">
+										<input type="text" class="form-control" placeholder="First Name">
+									</div>
+									<div class="col-sm-6">
+										<input type="text" class="form-control" placeholder="Last Name">
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-sm-6">
+										<input type="text" class="form-control" placeholder="Email Address">
+									</div>
+									<div class="col-sm-6">
+										<input type="text" class="form-control" placeholder="Phone">
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-sm-6">
+										<input type="text" class="form-control" placeholder="Password">
+									</div>
+									<div class="col-sm-6">
+										<input type="text" class="form-control" placeholder="Re - Password">
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-sm-6">
+										<input type="text" class="form-control" placeholder="Date of Birth">
+									</div>
+								</div>
+							</div>
+							<div class="row submitRow">
+								<div class="col-sm-6">
+									<input type="checkbox" id="termsOfUse"><label for="termsOfUse">I agree to <a href="">Terms of Use</a></label>
+								</div>
+								<div class="col-sm-6">
+									<button type="submit" class="btn btn-action pull-right">SUBMIT</button>
+								</div>
+							</div>
+						</form><!-- END OF MAIN CONTENT FORM -->
+					</section><!-- end .registrationFormWrapper -->
+				</div><!-- end #registrationFormWrapper -->
+			</div>
+			<section id="registeredUsers">
+				<h2>Number of registered users</h2>
+				<div class="row">
+					<div class="col-md-12">
+						<span class="number">3,920</span><br>
+						<span class="number user">REGISTERED USER</span>
+					</div>
+				</div>
+			</section>
+		</div>
+		<section id="links">
+			<h2>Links</h2>
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-2 customWidth">
+						<h3>ABOUT US</h3>
+						<ul>
+							<li><a href="">What We Do?</a></li>
+							<li><a href="">Privacy Policy</a></li>
+							<li><a href="">Terms of Us</a></li>
+							<li><a href="">Contact</a></li>
+						</ul>
+					</div>
+					<div class="col-sm-2 customWidth">
+						<h3>BANDS</h3>
+						<ul>
+							<li><a href="">Coverbands</a></li>
+							<li><a href="">DJ's</a></li>
+							<li><a href="">Danceband</a></li>
+							<li><a href="">Hardroch</a></li>
+							<li><a href="">Trubadurer</a></li>
+						</ul>
+					</div>
+					<div class="col-sm-2 customWidth">
+						<h3>NIGHTCLUBS</h3>
+						<ul>
+							<li><a href="">Coverbands</a></li>
+							<li><a href="">DJ's</a></li>
+							<li><a href="">Danceband</a></li>
+							<li><a href="">Hardroch</a></li>
+							<li><a href="">Trubadurer</a></li>
+						</ul>
+					</div>
+					<div class="col-sm-2 customWidth pubs">
+						<h3>PUBS</h3>
+						<ul>
+							<li><a href="">Coverbands</a></li>
+							<li><a href="">DJ's</a></li>
+							<li><a href="">Danceband</a></li>
+							<li><a href="">Hardroch</a></li>
+							<li><a href="">Trubadurer</a></li>
+						</ul>
+					</div>
+					<div class="col-sm-2 customWidth">
+						<h3>CONTACT US:</h3>
+						<ul>
+							<li>Hittasagiget.se</li>
+							<li>Lorem Ipsum Street number 23</li>
+							<li>Stockholm, Sweden</li>
+							<li>1-900-202-011</li>
+							<li><a class="mailTo" href="mailto:info@hittasagiget.se">info@hittasagiget.se</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section><!-- end #links -->
+	</main>
+	<footer id="mainFooter">
+		<h2>Footer</h2>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="socialIcons">
+						<span>SOCIAL:</span>
+						<a href="" class="icon facebook"></a>
+						<a href="" class="icon twitter"></a>
+						<a href="" class="icon google"></a>
+					</div>
+					<span>2014. All right Reserved</span>
+				</div>
+			</div>
+		</div>
+	</footer><!-- end #mainFooter -->
+</body>
+</html>

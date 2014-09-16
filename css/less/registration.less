@@ -1,0 +1,61 @@
+#registrationPage  {
+	background-color: #f6f6f6;
+	h2 {
+		font-size:38px;
+		line-height:125%;
+		font-family:'Oswald-Bold';
+		margin-top: 120px;
+		text-align:center;
+	}
+}
+.inputsWrapper {
+	margin-top:15px;
+	margin-bottom: 15px;
+	padding:15px 0px 0px 0px;
+	border-top: 1px solid #d4d4d4;
+	border-bottom: 1px solid #d4d4d4;
+	position:relative;
+	.glyphicon-music {
+		position: absolute;
+		top: -12px;
+		left: 48.5%;
+		z-index: 1;
+		display: inline-block;
+		width: 20px;
+		height: 20px;
+		background-color: #f6f6f6;
+		color:#d4d4d4;
+		&:before {
+			position: relative;
+			top: 20%;
+			left: 15%;
+		}
+	}
+	.form-control { margin-bottom: 15px; }
+}
+.submitRow {
+	padding-bottom:15px;
+	> div:first-child { top:8px; }
+	input + label {
+		margin-left: 5px;
+		position: relative;
+		bottom: 1px;
+		cursor:pointer;
+		a { color:#373a3f; font-family:'OpenSans-Bold'; }
+	}
+	.btn { width: 135px; }
+}
+#registeredUsers {
+	padding: 65px 0px;
+	text-align:center;
+	.number { 
+		display:inline-block;
+		font-size:52px;
+		margin-right: 10px;
+		color:#cccdcf;
+		font-family: 'Oswald-Bold';
+		color: rgba(0,0,0,0); 
+		text-shadow: .05em .05em .05em rgba(255,255,255,.25), 0 0 0 #cbcdcf;
+	}
+	.number.user { font-size:24px; margin-top:8px; }
+}
