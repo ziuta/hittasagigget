@@ -212,6 +212,15 @@ h4 { font-size:@baseFontSize + 2px; font-family:'OpenSans-Bold', 'Arial' }
 	.eventPanel:last-child { border-radius:0px 0px 5px 5px; margin-bottom:20px; border-bottom:1px solid #eceff5; }
 
 ------ */
+//--------------------------- 7.9 Pagination ------------------------//
+.pagination {
+	text-align:center;
+	> li > a { border:0px; transform: skewX(-15deg); padding: 4px 8px; margin-right: 10px; }
+	> li > a span { display:inline-block; transform: skewX(15deg); }
+	> li > a, > li > a:hover { color:#70757e; }
+	> li:first-child > a, > li:last-child > a { border-radius:0px; }
+	> .active > a, > .active > a:hover, > .active > a:focus { background-color: #e52927; border-color: #e52927; }
+}
 /*======================================================================================== */
 /*===== 8. IMPORTS ======================================================================= */
 /*======================================================================================== */
