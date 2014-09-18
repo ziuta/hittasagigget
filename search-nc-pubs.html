@@ -113,7 +113,7 @@
 						</div>
 						<div class="number">1,980</div>
 					</div>
-					<div class="col-md-5">
+					<div class="col-md-5 searchBox">
 						<input type="text" class="form-control" id="pubsSearchInput">
 						<button class="btn btn-action">FIND NOW!</button>
 					</div>
@@ -127,7 +127,43 @@
 			<h2>Most popular</h2>
 			<div class="container">
 				<div class="row">
-					<div class="col-md-9" id="resultList">
+					
+					<div class="col-md-3 col-sm-12 pull-right" id="searchFilters">
+						<div class="row">
+							<div class="col-md-12">
+								<span class="title">SEARCH FILTERS:</span>
+								<div class="line lineRed"></div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12 col-sm-6">
+								<span class="category">Show:</span>
+								<div class="claerfix"></div>
+								<input type="checkbox" id="all"><label for="all">ALL</label>
+								<div class="claerfix"></div>
+								<input type="checkbox" id="pubs"><label for="pubs">Pubs</label>
+								<div class="claerfix"></div>
+								<input type="checkbox" id="nightclubs"><label for="nightclubs">Nightclubs</label>
+							</div>
+							<div class="col-md-12 col-sm-6">
+								<span class="category">Capacity:</span>
+								<div class="claerfix"></div>
+								<input type="checkbox" id="under50"><label for="under50">Under 50 People</label>
+								<div class="claerfix"></div>
+								<input type="checkbox" id="50b150"><label for="50b150">50 - 150 People</label>
+								<div class="claerfix"></div>
+								<input type="checkbox" id="150b350"><label for="150b350">150 - 350 People</label>
+								<div class="claerfix"></div>
+								<input type="checkbox" id="350more"><label for="350more">350 and More</label>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<div class="advertisement"></div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-9 col-sm-12" id="resultList">
 						<div class="row">
 							<div class="col-md-9">
 								<span class="title">SEARCH RESULTS:</span>
@@ -156,8 +192,8 @@
 									<p>Address of this Pub or Club</p>
 								</div>
 							</div>
-						</div>
-						<div class="row">
+						
+						
 							<div class="col-md-4 col-sm-6 popularBand">
 								<img src="img/pub-exclusive.png" alt="">
 								<div class="description">
@@ -179,8 +215,8 @@
 									<p>Address of this Pub or Club</p>
 								</div>
 							</div>
-						</div>
-						<div class="row">
+						
+						
 							<div class="col-md-4 col-sm-6 popularBand">
 								<img src="img/beer.png" alt="">
 								<div class="description">
@@ -212,43 +248,6 @@
 								<li><a href="#"><span>3</span></a></li>
 								<li><a href="#"><span>&#187;</span></a></li>
 								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-3" id="searchFilters">
-						<div class="row">
-							<div class="col-md-12">
-								<span class="title">SEARCH FILTERS:</span>
-								<div class="line lineRed"></div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-12">
-								<span class="category">Show:</span>
-								<div class="claerfix"></div>
-								<input type="checkbox" id="all"><label for="all">ALL</label>
-								<div class="claerfix"></div>
-								<input type="checkbox" id="pubs"><label for="pubs">Pubs</label>
-								<div class="claerfix"></div>
-								<input type="checkbox" id="nightclubs"><label for="nightclubs">Nightclubs</label>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-12">
-								<span class="category">Capacity:</span>
-								<div class="claerfix"></div>
-								<input type="checkbox" id="under50"><label for="under50">Under 50 People</label>
-								<div class="claerfix"></div>
-								<input type="checkbox" id="50b150"><label for="50b150">50 - 150 People</label>
-								<div class="claerfix"></div>
-								<input type="checkbox" id="150b350"><label for="150b350">150 - 350 People</label>
-								<div class="claerfix"></div>
-								<input type="checkbox" id="350more"><label for="350more">350 and More</label>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-12">
-								<div class="advertisement"></div>
 							</div>
 						</div>
 					</div>
