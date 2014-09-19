@@ -1,148 +1,137 @@
-/*------------------------------------------------------------------ */
-/*------- HOMEPAGE ------------------------------------------------- */
-/*------------------------------------------------------------------ */
-@media screen and (max-width:1199px) {
-	#lookingForBrand form { padding:0px 69px; }
-	#lookingForBrand form .btn { margin-top:10px; }
-	#mostPopular img { width:225px; }
-}
+/*--------------------------------------------------------------------
+[Table of contents]
 
-@media screen and (max-width:991px) {
-	#lookingForBrand h2 { display:inline-block; }
-	#lookingForBrand .bandSearch {
-		padding:0px 100px;
-		top:73px;
-		form {
-			padding:0px 85px;
-			.partyType, .btn { width:340px; }
-			.location, .partyDay { width: 165px; margin-bottom:10px; }
-			.btn { margin-right: 10px; }
-		}
-		// .location, .partyType, .partyDay, .btn { position:relative }
-		// .location { left:-80px; }
-		// .partyType { left:92px; top:10px; display:block; }
-		// .partyDay { left:267px; bottom:84px; }
-	}
-	#mostPopular img { width:100%; }
-	#benefits h4 { width: 80%; }
-	#benefits .glyphicon { vertical-align:top;}
-	#numbers .customWidth { width: 33%; }
-	#numbers .customResponsive {
-		padding: 0px 165px;
-		.customWidth { width: 40%; margin-top: 70px; }
-		.customWidth:last-child { float:right; }
+	1. HOMEPAGE
+	2. PROFILE PAGE
+	3. REGISTRATION FORM
+	4. SEARCH PUBS
 
+/*------------------------------------------------------------------ */
+/*---- 1. HOMEPAGE ------------------------------------------------- */
+/*------------------------------------------------------------------ */
+/*---- Included styles for footer sections !! ---------------------- */
+/*------------------------------------------------------------------ */
+#homepage {
+	@media screen and (max-width:1199px) {
+		.lookingForBrand form { padding:0px 69px; }
+		.lookingForBrand form .btn { margin-top:10px; }
+		.mostPopular img { width:225px; }
 	}
-	#links { padding:50px 15px }
-	#links .customWidth { width: 26%; }
-	#links .pubs { width: 22%; }
-	#links .customWidth:last-child {
-		width:100%;
-		text-align:center;
-		margin-top: 50px;
-	}
-}
-@media screen and (max-width:767px) {
-	#lookingForBrand .bandSearch {
-		padding: 0px 30px;
-		form {
-			display:inline-block;
-			padding:0px;
-			.location, .partyType, .partyDay { display:inline-block; }
-			.location, .partyType { float:none; }
+
+	@media screen and (max-width:991px) {
+		.lookingForBrand h2 { display:inline-block; }
+		.lookingForBrand .bandSearch {
+			padding:0px 100px;
+			top:73px;
+			form {
+				padding:0px 85px;
+				.partyType, .btn { width:340px; }
+				.location, .partyDay { width: 165px; margin-bottom:10px; }
+				.btn { margin-right: 10px; }
+			}
 		}
-		// .location { left: 45px; }
-		// .partyType { left:133px; }
-		// .partyDay { left:267px; bottom:84px; }
-		// .btn { top:0px; right: 0px; left:15px; bottom:22px; }
-		// .partyType, .btn { width:340px; }
-		// .location, .partyDay { width: 165px; }
-	}
-	#benefits {
-		padding:40px 0px 10px 0px;
-		p { margin-bottom:30px; }
-	}
-	#numbers {
-		position:relative;
-		padding: 50px 0 160px;
-		.number { font-size:48px; }
-		.customResponsive { padding: 0px; }
-		.customWidth, .customResponsive .customWidth { width:49%; display:inline-block; }
-		.customResponsive .customWidth { margin: 20px 0px;  }
-		.danceBands { position:absolute; left:25%; bottom:50px; }
-	}
-	#links .customWidth { width: auto; text-align:center; }
-	#links .customWidth, #links .customWidth:last-child { margin-top: 40px; }
-	#links .customWidth li { margin-bottom: 10px; }
-	#mainFooter {
-		.socialIcons {
+		.mostPopular img { width:100%; }
+		.benefits h4 { width: 80%; }
+		.benefits .glyphicon { vertical-align:top;}
+		.numbersSection .customWidth { width: 33%; }
+		.numbersSection .customResponsive {
+			padding: 0px 165px;
+			.customWidth { width: 40%; margin-top: 70px; }
+			.customWidth:last-child { float:right; }
+
+		}
+		#links { padding:50px 15px }
+		#links .customWidth { width: 26%; }
+		#links .pubs { width: 22%; }
+		#links .customWidth:last-child {
 			width:100%;
 			text-align:center;
-			padding:20px 0px;
+			margin-top: 50px;
+		}
+	}
+	@media screen and (max-width:767px) {
+		.lookingForBrand .bandSearch {
+			padding: 0px 30px;
+			form {
+				display:inline-block;
+				padding:0px;
+				.location, .partyType, .partyDay { display:inline-block; }
+				.location, .partyType { float:none; }
+			}
+		}
+		.benefits {
+			padding:40px 0px 10px 0px;
+			p { margin-bottom:30px; }
+		}
+		.numbersSection {
 			position:relative;
-			z-index:5;
-			span:first-child { display:inline-block; width:100%; }
+			padding: 50px 0 160px;
+			.number { font-size:48px; }
+			.customResponsive { padding: 0px; }
+			.customWidth, .customResponsive .customWidth { width:49%; display:inline-block; }
+			.customResponsive .customWidth { margin: 20px 0px;  }
+			.danceBands { position:absolute; left:25%; bottom:50px; }
 		}
-		span:last-child {
-			display:block;
-			text-align:center;
-			padding-bottom:20px;
-		}
-	}
-}
-// @media screen and (max-width:639px) {
-// 	#lookingForBrand .bandSearch { padding:0px 5px; top:80px; }
-// }
-// @media screen and (max-width:479px) {
-// 	#lookingForBrand .bandSearch { padding:0px; }
-// }
-// @media screen and (max-width:469px) {
-// 	#lookingForBrand .bandSearch { top:-100px; }
-// }
-@media screen and (max-width:529px) {
-	#lookingForBrand { height:450px; }
-	#lookingForBrand .bandSearch {
-		padding: 50px 10px;
-		position: relative;
-		top: 0px;
-		h2 { font-size:42px; }
-		// h2 { display:inline; }
-		p { display:none; }
-		form {
-			margin-top: 20px;
-			// position:relative;
-			// bottom:120px;
+		#links .customWidth { width: auto; text-align:center; }
+		#links .customWidth, #links .customWidth:last-child { margin-top: 40px; }
+		#links .customWidth li { margin-bottom: 10px; }
+		#mainFooter {
+			.socialIcons {
+				width:100%;
+				text-align:center;
+				padding:20px 0px;
+				position:relative;
+				z-index:5;
+				span:first-child { display:inline-block; width:100%; }
+			}
+			span:last-child {
+				display:block;
+				text-align:center;
+				padding-bottom:20px;
+			}
 		}
 	}
-}
-@media screen and (max-width:479px) {
-	#lookingForBrand .bandSearch {
-		padding: 70px 10px;
-		h2 { font-size:38px; }
-		form {
-			.partyType, .btn { width:295px; }
-			.location, .partyDay { width: 140px; }
+	@media screen and (max-width:529px) {
+		.lookingForBrand { height:450px; }
+		.lookingForBrand .bandSearch {
+			padding: 50px 10px;
+			position: relative;
+			top: 0px;
+			h2 { font-size:42px; }
+			p { display:none; }
+			form {
+				margin-top: 20px;
+			}
 		}
 	}
-}
-@media screen and (max-width:379px) {
-	.bandSearchWrapper { padding:0px; }
-	#lookingForBrand .bandSearch {
-		form {
-			h2 { font-size:36px; }
-			// margin-top: 80px;
-			.partyType, .btn { width:255px; }
-			.location, .partyDay { width: 120px; }
+	@media screen and (max-width:479px) {
+		.lookingForBrand .bandSearch {
+			padding: 70px 10px;
+			h2 { font-size:38px; }
+			form {
+				.partyType, .btn { width:295px; }
+				.location, .partyDay { width: 140px; }
+			}
 		}
 	}
-	#numbers {
-		.type { font-size:20px; }
-		.number { font-size:44px; }
+	@media screen and (max-width:379px) {
+		.bandSearchWrapper { padding:0px; }
+		.lookingForBrand .bandSearch {
+			form {
+				h2 { font-size:36px; }
+				.partyType, .btn { width:255px; }
+				.location, .partyDay { width: 120px; }
+			}
+		}
+		.numbersSection {
+			.type { font-size:20px; }
+			.number { font-size:44px; }
+		}
 	}
 }
 
 /*------------------------------------------------------------------ */
-/*------- PROFILE PAGE --------------------------------------------- */
+/*---- 2. PROFILE PAGE --------------------------------------------- */
 /*------------------------------------------------------------------ */
 // @media screen and (max-width:991px) {
 // 	#profileDescription .customWidth { width: 40%;}
@@ -222,7 +211,7 @@
 	#latestStuff .newSongPanel .date { bottom:32px; }
 }
 /*------------------------------------------------------------------ */
-/*------- REGISTRATION FORM ---------------------------------------- */
+/*---- 3. REGISTRATION FORM ---------------------------------------- */
 /*------------------------------------------------------------------ */
 @media screen and (max-width:767px) {
 	.submitRow .btn { position: relative; bottom:20px; }
@@ -235,7 +224,7 @@
 }
 
 /*------------------------------------------------------------------ */
-/*------- SEARCH PUBS ---------------------------------------------- */
+/*---- 4. SEARCH PUBS ---------------------------------------------- */
 /*------------------------------------------------------------------ */
 #searchPubsPage {
 	@media screen and (max-width:1199px) {
