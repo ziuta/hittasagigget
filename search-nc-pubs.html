@@ -103,67 +103,82 @@
 		</nav><!-- end #mainNavigation -->
 	</header><!-- end #mainHeader -->
 	<main id="searchPubsPage">
-		<section id="nightclubsSearch">
+		<section class="nightclubsSearch">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-7 title">
+						<div class="number">1,980</div>
 						<div>
 							<h2>NIGHTCLUBS/PUBS IN SWEDEN</h2>
 							<span>Lorem ipsum dolor sit amet consectetur adipisicing</span>
 						</div>
-						<div class="number">1,980</div>
 					</div>
-					<div class="col-md-5 searchBox">
+					<div class="col-xs-12 col-md-5 searchBox">
 						<input type="text" class="form-control" id="pubsSearchInput">
 						<button class="btn btn-action">FIND NOW!</button>
 					</div>
 				</div>
 			</div>
 		</section><!-- end #nightclubsSearch -->
-		<section id="googleMaps">
-			<div id="moja-mapa" style="width: 100%; height: 360px;"></div>
+		<section class="googleMaps">
+			<div id="myMap" style="width: 100%; height: 360px;"></div>
 		</section><!-- end #googleMaps -->
-		<section id="searchResults">
+		<section class="searchResults">
 			<h2>Most popular</h2>
 			<div class="container">
 				<div class="row">
-					
-					<div class="col-md-3 col-sm-12 pull-right" id="searchFilters">
+					<div class="col-xs-12 col-sm-12 col-md-3 pull-right searchFilters">
 						<div class="row">
 							<div class="col-md-12">
 								<span class="title">SEARCH FILTERS:</span>
-								<div class="line lineRed"></div>
+								<div class="line lineDarkGray"></div>
 							</div>
 						</div>
 						<div class="row">
-							<div class="col-md-12 col-sm-6">
-								<span class="category">Show:</span>
-								<div class="claerfix"></div>
-								<input type="checkbox" id="all"><label for="all">ALL</label>
-								<div class="claerfix"></div>
-								<input type="checkbox" id="pubs"><label for="pubs">Pubs</label>
-								<div class="claerfix"></div>
-								<input type="checkbox" id="nightclubs"><label for="nightclubs">Nightclubs</label>
+							<div class="col-sm-6 col-md-12">
+								<div class="row">
+									<div class="col-md-12">
+										<span class="category">Show:</span>
+									</div>
+									<div class="claerfix"></div>
+									<div class="col-xs-6 col-sm-6 col-md-12">
+										<input type="checkbox" id="all"><label for="all">ALL</label>
+										<div class="claerfix"></div>
+										<input type="checkbox" id="pubs"><label for="pubs">Pubs</label>
+										<div class="claerfix"></div>
+									</div>
+									<div class="col-xs-6 col-sm-6 col-md-12">
+										<input type="checkbox" id="nightclubs"><label for="nightclubs">Nightclubs</label>
+									</div>
+								</div>
 							</div>
-							<div class="col-md-12 col-sm-6">
-								<span class="category">Capacity:</span>
-								<div class="claerfix"></div>
-								<input type="checkbox" id="under50"><label for="under50">Under 50 People</label>
-								<div class="claerfix"></div>
-								<input type="checkbox" id="50b150"><label for="50b150">50 - 150 People</label>
-								<div class="claerfix"></div>
-								<input type="checkbox" id="150b350"><label for="150b350">150 - 350 People</label>
-								<div class="claerfix"></div>
-								<input type="checkbox" id="350more"><label for="350more">350 and More</label>
+							<div class="col-sm-6 col-md-12">
+								<div class="row">
+									<div class="col-md-12">
+										<span class="category">Capacity:</span>
+										<div class="claerfix"></div>
+									</div>
+									<div class="col-xs-6 col-sm-6 col-md-12">
+										<input type="checkbox" id="under50"><label for="under50">Under 50 People</label>
+										<div class="claerfix"></div>
+										<input type="checkbox" id="50b150"><label for="50b150">50 - 150 People</label>
+										<div class="claerfix"></div>
+									</div>
+									<div class="col-xs-6 col-sm-6 col-md-12">
+										<input type="checkbox" id="150b350"><label for="150b350">150 - 350 People</label>
+										<div class="claerfix"></div>
+										<input type="checkbox" id="350more"><label for="350more">350 and More</label>
+									</div>
+								</div>
 							</div>
 						</div>
 						<div class="row">
 							<div class="col-md-12">
-								<div class="advertisement"></div>
+								<a href="" class="advertisement"></a>
 							</div>
 						</div>
 					</div>
-					<div class="col-md-9 col-sm-12" id="resultList">
+					<div class="col-xs-12 col-sm-12 col-md-9 resultList">
 						<div class="row">
 							<div class="col-md-9">
 								<span class="title">SEARCH RESULTS:</span>
@@ -171,71 +186,153 @@
 							</div>
 						</div>
 						<div class="row">
-							<div class="col-md-4 col-sm-6 popularBand">
+							<div class="col-xs-12 col-sm-6 col-md-4 popularBand">
 								<img src="img/beer.png" alt="">
 								<div class="description">
-									<h4>Swedish Pub</h4>
-									<p>Address of this Pub or Club</p>
+									<div>
+										<h4>Swedish Pub</h4>
+										<p>Address of this Pub or Club</p>
+									</div>
+									<div class="showMap">
+										<a href="">Show Map</a>
+									</div>
 								</div>
 							</div>
-							<div class="col-md-4 col-sm-6 popularBand">
+							<div class="col-xs-12 col-sm-6 col-md-4 popularBand">
 								<img src="img/sherlock.png" alt="">
 								<div class="description">
-									<h4>Swedish Pub</h4>
-									<p>Address of this Pub or Club</p>
+									<div>
+										<h4>Swedish Pub</h4>
+										<p>Address of this Pub or Club</p>
+									</div>
+									<div class="showMap">
+										<a href="">Show Map</a>
+									</div>
 								</div>
 							</div>
-							<div class="col-md-4 col-sm-6 popularBand">
+							<div class="col-xs-12 col-sm-6 col-md-4 popularBand">
 								<img src="img/pub-inside.png" alt="">
 								<div class="description">
-									<h4>Swedish Pub</h4>
-									<p>Address of this Pub or Club</p>
+									<div>
+										<h4>Swedish Pub</h4>
+										<p>Address of this Pub or Club</p>
+									</div>
+									<div class="showMap">
+										<a href="">Show Map</a>
+									</div>
 								</div>
 							</div>
 						
 						
-							<div class="col-md-4 col-sm-6 popularBand">
+							<div class="col-xs-12 col-sm-6 col-md-4 popularBand">
 								<img src="img/pub-exclusive.png" alt="">
 								<div class="description">
-									<h4>Swedish Pub</h4>
-									<p>Address of this Pub or Club</p>
+									<div>
+										<h4>Swedish Pub</h4>
+										<p>Address of this Pub or Club</p>
+									</div>
+									<div class="showMap">
+										<a href="">Show Map</a>
+									</div>
 								</div>
 							</div>
-							<div class="col-md-4 col-sm-6 popularBand">
+							<div class="col-xs-12 col-sm-6 col-md-4 popularBand">
 								<img src="img/pub-modern.png" alt="">
 								<div class="description">
-									<h4>Swedish Pub</h4>
-									<p>Address of this Pub or Club</p>
+									<div>
+										<h4>Swedish Pub</h4>
+										<p>Address of this Pub or Club</p>
+									</div>
+									<div class="showMap">
+										<a href="">Show Map</a>
+									</div>
 								</div>
 							</div>
-							<div class="col-md-4 col-sm-6 popularBand">
+							<div class="col-xs-12 col-sm-6 col-md-4 popularBand">
 								<img src="img/pub-oriental.png" alt="">
 								<div class="description">
-									<h4>Swedish Pub</h4>
-									<p>Address of this Pub or Club</p>
+									<div>
+										<h4>Swedish Pub</h4>
+										<p>Address of this Pub or Club</p>
+									</div>
+									<div class="showMap">
+										<a href="">Show Map</a>
+									</div>
 								</div>
 							</div>
 						
 						
-							<div class="col-md-4 col-sm-6 popularBand">
+							<div class="col-xs-12 col-sm-6 col-md-4 popularBand">
 								<img src="img/beer.png" alt="">
 								<div class="description">
-									<h4>Swedish Pub</h4>
-									<p>Address of this Pub or Club</p>
+									<div>
+										<h4>Swedish Pub</h4>
+										<p>Address of this Pub or Club</p>
+									</div>
+									<div class="showMap">
+										<a href="">Show Map</a>
+									</div>
 								</div>
 							</div>
-							<div class="col-md-4 col-sm-6 popularBand">
+							<div class="col-xs-12 col-sm-6 col-md-4 popularBand">
 								<img src="img/sherlock.png" alt="">
 								<div class="description">
-									<h4>Swedish Pub</h4>
-									<p>Address of this Pub or Club</p>
+									<div>
+										<h4>Swedish Pub</h4>
+										<p>Address of this Pub or Club</p>
+									</div>
+									<div class="showMap">
+										<a href="">Show Map</a>
+									</div>
 								</div>
 							</div>
-							<div class="col-md-4 col-sm-6 popularBand">
+							<div class="col-xs-12 col-sm-6 col-md-4 popularBand">
 								<img src="img/pub-inside.png" alt="">
 								<div class="description">
-									<h4>Swedish Pub</h4>
-									<p>Address of this Pub or Club</p>
+									<div>
+										<h4>Swedish Pub</h4>
+										<p>Address of this Pub or Club</p>
+									</div>
+									<div class="showMap">
+										<a href="">Show Map</a>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-xs-12 col-sm-6 col-md-4 popularBand">
+								<img src="img/pub-exclusive.png" alt="">
+								<div class="description">
+									<div>
+										<h4>Swedish Pub</h4>
+										<p>Address of this Pub or Club</p>
+									</div>
+									<div class="showMap">
+										<a href="">Show Map</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-xs-12 col-sm-6 col-md-4 popularBand">
+								<img src="img/pub-modern.png" alt="">
+								<div class="description">
+									<div>
+										<h4>Swedish Pub</h4>
+										<p>Address of this Pub or Club</p>
+									</div>
+									<div class="showMap">
+										<a href="">Show Map</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-xs-12 col-sm-6 col-md-4 popularBand">
+								<img src="img/pub-oriental.png" alt="">
+								<div class="description">
+									<div>
+										<h4>Swedish Pub</h4>
+										<p>Address of this Pub or Club</p>
+									</div>
+									<div class="showMap">
+										<a href="">Show Map</a>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -339,7 +436,7 @@
                 center: new google.maps.LatLng(lat, lng),
                 mapTypeId: google.maps.MapTypeId.ROADMAP
             };
-            map = new google.maps.Map(document.getElementById('moja-mapa'), myOptions);
+            map = new google.maps.Map(document.getElementById('myMap'), myOptions);
         }
         google.maps.event.addDomListener(window, 'load', initialize);
 	</script>

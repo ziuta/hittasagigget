@@ -237,13 +237,31 @@
 /*------------------------------------------------------------------ */
 /*------- SEARCH PUBS ---------------------------------------------- */
 /*------------------------------------------------------------------ */
-@media screen and (max-width:1199px) {
-	#searchPubsPage .title { width: 100%; }
-	#searchPubsPage .searchBox { width: 60%; margin-top: 15px; }
-	#resultList img { width: 220px; }
-}
-
-@media screen and (max-width:991px) {
-	#searchFilters .advertisement { display:none; }
-	#resultList img { width: 340px; }
+#searchPubsPage {
+	@media screen and (max-width:1199px) {
+		.title { width: 100%; }
+		.searchBox { width:60%; margin-top: 15px; }
+		.resultList img { width: 220px; }
+	}
+	@media screen and (max-width:991px) {
+		.searchBox { width: 100%; }
+		.searchBox input { padding-left: 35px; }
+		.searchFilters .advertisement { display:none; }
+		.searchResults { padding:35px 0px; }
+		.resultList img { width: 340px; }
+		.resultList .title { margin-top: 20px; display:inline-block; }
+		.resultList .line { margin-bottom:20px; }
+	}
+	@media screen and (max-width:767px) {
+		.nightclubsSearch { padding: 30px 0px; }
+		.nightclubsSearch .title>div span { display:none; }
+		.nightclubsSearch .number { margin-bottom: 15px; }
+		.nightclubsSearch .searchBox { width: 100%; }
+		.nightclubsSearch .searchBox input { margin-bottom: 15px; padding-left:45px; }
+		.nightclubsSearch .searchBox input, .nightclubsSearch .searchBox button { width: 100%; }
+		.resultList img { width: 100%; }
+	}
+	@media screen and (max-width:479px) {
+		.searchBox input { padding-left: 25px; }
+	}
 }
