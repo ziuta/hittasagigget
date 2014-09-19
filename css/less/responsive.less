@@ -129,7 +129,6 @@
 		}
 	}
 }
-
 /*------------------------------------------------------------------ */
 /*---- 2. PROFILE PAGE --------------------------------------------- */
 /*------------------------------------------------------------------ */
@@ -255,3 +254,36 @@
 		.searchBox input { padding-left: 25px; }
 	}
 }
+/*------------------------------------------------------------------ */
+/*---- 5. FOOTER --------------------------------------------------- */
+/*------------------------------------------------------------------ */
+@media screen and (max-width:991px) {
+	#links { padding:50px 15px }
+	#links .customWidth { width: 26%; }
+	#links .pubs { width: 22%; }
+	#links .customWidth:last-child {
+		width:100%;
+		text-align:center;
+		margin-top: 50px;
+	}
+}
+@media screen and (max-width:767px) {
+		#links .customWidth { width: auto; text-align:center; }
+		#links .customWidth, #links .customWidth:last-child { margin-top: 40px; }
+		#links .customWidth li { margin-bottom: 10px; }
+		#mainFooter {
+			.socialIcons {
+				width:100%;
+				text-align:center;
+				padding:20px 0px;
+				position:relative;
+				z-index:5;
+				span:first-child { display:inline-block; width:100%; }
+			}
+			span:last-child {
+				display:block;
+				text-align:center;
+				padding-bottom:20px;
+			}
+		}
+	}
