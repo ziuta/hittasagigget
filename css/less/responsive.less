@@ -5,6 +5,8 @@
 	2. PROFILE PAGE
 	3. REGISTRATION FORM
 	4. SEARCH PUBS
+	5. ADVERTISERS
+	6. FOOTER
 
 /*------------------------------------------------------------------ */
 /*---- 1. HOMEPAGE ------------------------------------------------- */
@@ -277,7 +279,100 @@
 	}
 }
 /*------------------------------------------------------------------ */
-/*---- 5. FOOTER --------------------------------------------------- */
+/*---- 5. ADVERTISERS ---------------------------------------------- */
+/*------------------------------------------------------------------ */
+#advertisersPage {
+	@media screen and (max-width:1199px) {
+		#upcomingEvents .selectBox p { position: relative; bottom:10px; }
+		#eventList {
+			h4 { margin-top: 0px; margin-bottom: 5px; }
+			// width declaration
+			.eventPlace { width: 20%; }
+			.eventType { width: 25%; }
+			.eventStuff { width: 13%; }
+			.viewMore { width:20%; }
+			// footer
+			.eventDate { width: 60%; border-right:none; float:right }
+		}
+		.tags {
+			display:inline-block;
+			width: 20%;
+			border-right: 1px solid #bac3cc;
+			height:40px;
+			float:left;
+			position:relative;
+			> div { position:absolute; bottom:3px; }
+		}
+		.eventPanel footer .eventDate {
+			display:inline-block !important;
+			padding: 5px 0 5px 10px;
+		}
+		.eventPanel header { padding:0px; }
+		.eventPanel .subPanel { padding: 0px 10px 5px 10px; }
+		.eventPanel .subPanel:last-child { padding: 0px 0 5px 10px; }
+		.eventPanel .eventPlace { padding: 0px 10px 5px 0px }
+		.eventPanel footer { margin-top: 0px; }
+	}
+	@media screen and (max-width:991px) {
+		#upcomingEvents .selectBoxSecond .selectpicker { width: 160px; }
+		#upcomingEvents .title>div, #upcomingEvents .title .number { max-width:275px; }
+		#upcomingEvents .title { padding-right: 0px; }
+		.eventPanel .subPanel:last-child { padding: 3px 0 5px 10px; }
+		#eventList {
+			// width declaration
+			.eventPlace { width: 23%; }
+			.eventType { width: 19%; }
+			.eventStuff { width: 16%; }
+			.viewMore { width:14%; }
+			// footer
+			.eventDate { width: 51%; }
+			.tags {
+				width: 23%; height:45px;
+				> div { bottom: 7px; }
+			}
+		}
+		#eventList .eventStuff { border-right:none; }
+		.eventPanel .subPanel { padding: 0 7px 5px; }
+		#eventList .eventPlace { padding: 5px 0px; }
+		.eventPanel .subPanel .viewMore a { position:relative; top:8px; }
+	}
+	@media screen and (max-width:767px) {
+		#upcomingEvents .title>div span { display:none; }
+		#upcomingEvents .title>div:last-child {
+			width: 75%;
+			position: relative;
+			bottom: 10px;
+			line-height: 285%;
+		}
+		.selectBox { margin-top: 15px; }
+		.bootstrap-select.btn-group:not(.input-group-btn) {
+			display: block;
+			.selectpicker { width: 100%; }
+		}
+		#upcomingEvents .selectBoxSecond {
+			p { position:static; margin:15px 0px 10px 0px; }
+			.selectpicker { width: 100%; }
+		}
+		.eventPanel img { width: 80px; }
+		#eventList h4 { width: 55%; }
+		.eventPanel .subPanel span, .eventPanel .subPanel a { font-size:@baseFontSize - 1px; }
+		.responsivePadding0 { padding:0px; }
+		#eventList .eventPanel:first-child, #eventList .eventPanel:last-child { border-radius:0px; }
+		.eventPanel .subPanel { padding: 5px 0px 5px 5px; }
+		#eventList header { height:56px; }
+		#eventList .eventPlace { float:left; padding: 5px 0px; width: 55%; }
+		.eventPanel .subPanel a { top:0px; margin-top: 0px; }
+		#eventList .eventType { border-right:none; width: 45%; }
+		#eventList .tags { float:left; border:none; width:50%; }
+		#eventList .eventDate { width: 100%; padding:0px; margin-top: 15px; }
+		#eventList .eventPanel footer .viewMore { display: inline-block !important; padding: 35px 10px 0px 10px; width: 40%; }
+
+
+		#eventList h4 { font-size:20px; }
+	}
+}
+/*------------------------------------------------------------------ */
+/*---- 6. FOOTER --------------------------------------------------- */
 /*------------------------------------------------------------------ */
 @media screen and (max-width:991px) {
 	#links { padding:50px 15px }
