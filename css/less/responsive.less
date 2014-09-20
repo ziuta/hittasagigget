@@ -174,19 +174,31 @@
 	// #latestStuff .eventPanel img { width: 80px; }
 
 	// #pressrelease .release { width: 100%; }
-	#profileDescription .leftSide { width:50%; float:left; margin-bottom: -220px; }
-	#profileDescription .panelSummary { display:none; }
-	#pressrelease > div { width: 50%; }
-	#pressrelease .release { width: 100%; }
-	#pressrelease .btn-action { margin-top: 30px; }
-	#pressrelease .panel-body { padding-bottom: 0px; }
-	#pressrelease .panel { margin-bottom: 0px; }
-	#latestStuff > div { width:100%; float:right; padding-left: 15px; }
+	// 09.20
+
+	// #profileDescription .leftSide { width:50%; float:left; margin-bottom: -220px; }
+	// #profileDescription .panelSummary { display:none; }
+	// #pressrelease > div { width: 50%; }
+	// #pressrelease .release { width: 100%; }
+	// #pressrelease .btn-action { margin-top: 30px; }
+	// #pressrelease .panel-body { padding-bottom: 0px; }
+	// #pressrelease .panel { margin-bottom: 0px; }
+	// #latestStuff > div { width:100%; float:right; padding-left: 15px; }
+}
+
+@media screen and (max-width:767px) {
+	#profileDescription .leftSide, #pressrelease > div, #latestStuff > div { width: 100%; }
+	#profileDescription .leftSide { margin-bottom: -215px; }
+	#latestStuff .eventPanel img { width: 80px; }
+	#latestStuff { float:left; width: 100%; }
+	#pressrelease>div, #latestStuff>div { padding-left: 15px; }
+	#pressrelease .release div span, #pressrelease .btn-action { bottom: 0px; }
+	#latestStuff .newSongPanel { padding: 10px 0px 10px 0px; }
+	#latestStuff .eventPanel img { width: auto; }
 }
 
 
-
-@media screen and (max-width:639px) {
+@media screen and (max-width:767px) {
 	#latestStuff span, #latestStuff a { font-size:@baseFontSize - 1px; }
 	
 	#latestStuff .eventPanel img { margin-right:10px; }
@@ -195,14 +207,22 @@
 	#latestStuff .eventPanel h4 { margin-bottom: 5px; width:62%; }
 	#latestStuff .eventPanel h4, #latestStuff .newSongPanel h4 { font-size:@baseFontSize + 1px; }
 	#latestStuff header span { margin-bottom: 8px; }
-	#latestStuff .newSongPanel { padding: 10px 0px 0px 0px; }
-	#latestStuff .newSongPanel img { margin-top: 5px; }
+
 	
 	#profilePage .panel-body { padding:10px; }
 }
-@media screen and (max-width:520px) {
-	#profileDescription .leftSide, #pressrelease > div, #latestStuff > div { width: 100%; }
-	#latestStuff .eventPanel img { width: 80px; }
+@media screen and (max-width:579px) {
+	#latestStuff span, #latestStuff a { font-size:@baseFontSize - 1px; }
+	
+	#latestStuff .eventPanel img { margin-right:10px; }
+	#latestStuff .eventPanel .eventPlace { padding: 10px 5px 5px 0; }
+	#latestStuff .eventPanel .eventType { padding: 5px 0 5px 0px; }
+	#latestStuff .eventPanel h4 { margin-bottom: 5px; width:62%; }
+	#latestStuff .eventPanel h4, #latestStuff .newSongPanel h4 { font-size:@baseFontSize + 1px; }
+	#latestStuff header span { margin-bottom: 8px; }
+
+	
+	#profilePage .panel-body { padding:10px; }
 }
 @media screen and (max-width:359px) {
 	#latestStuff .eventPanel { position:relative; }
@@ -243,12 +263,14 @@
 	}
 	@media screen and (max-width:767px) {
 		.nightclubsSearch { padding: 30px 0px; }
-		.nightclubsSearch .title>div span { display:none; }
 		.nightclubsSearch .number { margin-bottom: 15px; }
 		.nightclubsSearch .searchBox { width: 100%; }
 		.nightclubsSearch .searchBox input { margin-bottom: 15px; padding-left:45px; }
 		.nightclubsSearch .searchBox input, .nightclubsSearch .searchBox button { width: 100%; }
 		.resultList img { width: 100%; }
+	}
+	@media screen and (max-width:625px) {
+		.nightclubsSearch .title>div span { display:none; }
 	}
 	@media screen and (max-width:479px) {
 		.searchBox input { padding-left: 25px; }
