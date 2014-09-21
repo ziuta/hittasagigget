@@ -11,8 +11,6 @@
 /*------------------------------------------------------------------ */
 /*---- 1. HOMEPAGE ------------------------------------------------- */
 /*------------------------------------------------------------------ */
-/*---- Included styles for footer sections !! ---------------------- */
-/*------------------------------------------------------------------ */
 #homepage {
 	@media screen and (max-width:1199px) {
 		.lookingForBrand form { padding:0px 69px; }
@@ -141,6 +139,7 @@
 // }
 
 @media screen and (max-width:1199px) {
+	#profilePage + #links { margin-top: 0px; }
 	#pressrelease .release { display:inline-block; width: 49.5%; border:none; }
 	#pressrelease .release img { float:left; }
 	#pressrelease .release div { bottom:0px; width:64% }
@@ -238,16 +237,17 @@
 	#latestStuff .eventPanel h4, #latestStuff .newSongPanel h4 { font-size:@baseFontSize + 1px; }
 	#profileDescription .leftSide .responsiveMenu { display:block; }
 	#profileDescription .leftSide .panelSummary { display: none; }
-	#latestStuff .newSongPanel .date { bottom:0px; top:8px; }
+	#latestStuff .newSongPanel .date { bottom:0px; top:10px; }
 
 	
 	#profilePage .panel-body { padding:10px; }
 }
 @media screen and (max-width:522px) {
 	#latestStuff .eventPanel header, #pressrelease .release div { width:75%; }
+	#pressrelease .release div span { margin-top: 3px; }
 }
 @media screen and (max-width:432px) {
-	#latestStuff .eventPanel header, #pressrelease .release div { width:60%; }
+	#latestStuff .eventPanel header { width:60%; }
 	#latestStuff .eventPanel header span { float:left }
 	#latestStuff .eventPanel .eventPlace {
 		.cellwrap();
@@ -255,10 +255,10 @@
 		max-width: 180px;
 		width: auto;
 	}
+	#latestStuff .eventPanel .eventType { position:relative; bottom:8px; }
 }
 @media screen and (max-width:359px) {
 	#latestStuff .eventPanel { position:relative; }
-	#latestStuff .eventPanel .eventType { position:absolute; bottom:10%; left:160px; }
 }
 /*------------------------------------------------------------------ */
 /*---- 3. REGISTRATION FORM ---------------------------------------- */
@@ -334,7 +334,7 @@
 		}
 		.eventPanel footer .eventDate {
 			display:inline-block !important;
-			padding: 5px 0 5px 0px;
+			padding: 5px 0 5px 10px;
 		}
 		.eventPanel header { padding:0px; }
 		.eventPanel .subPanel { padding: 0px 10px 5px 10px; }
@@ -374,6 +374,7 @@
 			.selectpicker { width: 100%; }
 		}
 		.upcomingEvents .selectBoxSecond {
+			margin-top: 0px;
 			p { position:static; margin:15px 0px 10px 0px; }
 			.selectpicker { width: 100%; }
 		}
@@ -389,7 +390,7 @@
 		.eventList .tags { float:left; border:none; width:50%; }
 		.eventList .eventDate { width: 100%; padding:0px; margin-top: 15px; }
 		.eventList .eventPanel footer .viewMore { display: inline-block !important; padding: 35px 10px 0px 10px; width: 40%; }
-
+		.eventPanel footer .eventDate { padding: 5px 0px; }
 
 		.eventList h4 { font-size:20px; }
 	}

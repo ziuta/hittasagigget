@@ -9,8 +9,10 @@ Last change:	07/09/14 [Parallax Function]
 [Table of contents]
 
 	1. Parallax effect
-	2. Functions calls
-	3. Placeholders / for IE9 <
+	2. Placeholders / for IE9 <
+  3. Google Maps
+  4. Responsive Menu / profile page
+  5. Functions calls
 
 -------------------------------------------------------------------*/
 
@@ -33,16 +35,7 @@ function parallax() {
 	});
 }
 //----
-//---- 2. Functions calls ----//
-$(document).ready(function(){
-	parallax();
-	//---- plugins triggers
-	$('#datetimepicker').datetimepicker({
-		language: 'en',
-    	pickTime: false,
-	});
-});
-//---- 3. Placeholders ------//
+//---- 2. Placeholders ------//
 (function($) {
   // @todo Document this.
   $.extend($,{ placeholder: {
@@ -154,3 +147,35 @@ jQuery(document).add(window).bind('ready load', function() {
   }
 });
 //----
+//---- 3. Google Maps ----//
+if (('#searchPubsPage').length > 0) {
+  var map;
+          var lat=59.328699;
+          var lng=18.061701;
+          var zoom=15;
+   
+          function initialize() {
+              var myOptions = {
+                  zoom: zoom,
+                  center: new google.maps.LatLng(lat, lng),
+                  mapTypeId: google.maps.MapTypeId.ROADMAP
+              };
+              map = new google.maps.Map(document.getElementById('myMap'), myOptions);
+          }
+          google.maps.event.addDomListener(window, 'load', initialize);
+}
+//----
+//---- 4. Responsive Menu ----//
+$(document).on('click', '#responsiveMenuBar', function(){
+  $(this).next().slideToggle(500);
+});
+//----
+//---- 5. Functions calls ----//
+$(document).ready(function(){
+  parallax();
+  //---- plugins triggers
+  $('#datetimepicker').datetimepicker({
+    language: 'en',
+      pickTime: false,
+  });
+});

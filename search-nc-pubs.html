@@ -116,7 +116,7 @@
 						</div>
 					</div>
 					<div class="col-xs-12 col-md-5 searchBox">
-						<input type="text" class="form-control" id="pubsSearchInput">
+						<input type="text" class="form-control" id="pubsSearchInput" placeholder="Stockholm, Sweden">
 						<button class="btn btn-action">FIND NOW!</button>
 					</div>
 				</div>
@@ -353,7 +353,8 @@
 				</div>
 			</div>
 		</section><!-- end .searchResults -->
-		<section id="links">
+	</main>
+	<section id="links">
 			<h2>Links</h2>
 			<div class="container">
 				<div class="row">
@@ -409,7 +410,6 @@
 				</div>
 			</div>
 		</section><!-- end #links -->
-	</main>
 	<footer id="mainFooter">
 		<h2>Footer</h2>
 		<div class="container">
@@ -426,21 +426,5 @@
 			</div>
 		</div>
 	</footer><!-- end #mainFooter -->
-	<script type="text/javascript">
-        var map;
-        var lat=59.328699;
-        var lng=18.061701;
-        var zoom=15;
- 
-        function initialize() {
-            var myOptions = {
-                zoom: zoom,
-                center: new google.maps.LatLng(lat, lng),
-                mapTypeId: google.maps.MapTypeId.ROADMAP
-            };
-            map = new google.maps.Map(document.getElementById('myMap'), myOptions);
-        }
-        google.maps.event.addDomListener(window, 'load', initialize);
-	</script>
 </body>
 </html>
