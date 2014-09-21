@@ -24,6 +24,7 @@ Last change:	07/09/14 [Homepage styling]
 		7.7 Thick color lines
 		7.8 Event Panels
 		7.9 Pagination
+		7.10 Registration Modal
 	8. IMPORTS
 
 /*======================================================================================== */
@@ -48,6 +49,11 @@ Last change:	07/09/14 [Homepage styling]
     src: url(../fonts/Oswald-Regular.ttf);
 }
 //----
+@font-face {
+    font-family: OpenSans-ExtraBold;
+    src: url(../fonts/OpenSans-ExtraBold.ttf) format("truetype"),
+    	 url(../fonts/OpenSans-ExtraBold.eot);
+}
 @font-face {
     font-family: OpenSans-Bold;
     src: url(../fonts/OpenSans-Bold.ttf) format("truetype"),
@@ -165,6 +171,13 @@ h4 { font-size:@baseFontSize + 2px; font-family:'OpenSans-Bold', 'Arial' }
 		background-color: darken(#0c7abe, 10%);
 	}
 }
+// black button
+.btn-black {
+	background-color: #000;
+	&:focus, &:hover {
+		color:#FFF;
+	}
+}
 //--------------------------- 7.6 Labels -------------------------------//
 .label-default { background-color: #e4e7ec; color: #70757e; }
 //--------------------------- 7.7 Thick color lines --------------------//
@@ -222,6 +235,50 @@ h4 { font-size:@baseFontSize + 2px; font-family:'OpenSans-Bold', 'Arial' }
 	> li > a, > li > a:hover { color:#70757e; }
 	> li:first-child > a, > li:last-child > a { border-radius:0px; }
 	> .active > a, > .active > a:hover, > .active > a:focus { background-color: #e52927; border-color: #e52927; }
+}
+//--------------------------- 7.10 Registration Modal ---------------//
+#registrationModal {
+	.modal-header, .modal-footer { border:none; }
+	.modal-dialog {
+		width: 440px;
+		margin-top: 100px;
+		@media screen and (max-width:767px) {
+			margin: 100px auto 0px;
+		}
+		@media screen and (max-width:460px) {
+			width:100%;
+		}
+		.modal-content { background-color:rgba(255,255,255,0.9); }
+		.modal-header {
+			padding:5px;
+		}
+		.modal-body {
+			padding: 10px 0 20px 0px;
+			margin: 0px 20px;
+			border-bottom:1px solid #ddd;
+			p { text-align:center; font-size: 23px; font-family: 'OpenSans-ExtraBold'; }
+			.choose-icon {
+				background: url('../img/choose-icon.png') no-repeat;
+				width:15px;
+				height:14px;
+				position: absolute;
+				top: 90%;
+				left: 48%;
+			}
+		}
+		.modal-footer {
+			margin-top:0px;
+			.btn {
+				width: 190px;
+				padding:10px;
+				&:first-child { float:left; }
+				@media screen and (max-width:460px) {
+					width: 100%;
+					&+.btn { margin:10px 0px 0px 0px }
+				}
+			}
+		}
+	}
 }
 /*======================================================================================== */
 /*===== 8. IMPORTS ======================================================================= */

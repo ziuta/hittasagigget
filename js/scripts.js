@@ -170,7 +170,31 @@ $(document).on('click', '#responsiveMenuBar', function(){
   $(this).next().slideToggle(500);
 });
 //----
-//---- 5. Functions calls ----//
+//---- 5. Registration Modal ----//
+$(document).on('click', '#mainNavigation .joinUs', function(e){
+  e.preventDefault();
+  var boostrapModal = '<div class="modal fade" id="registrationModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">' +
+    '<div class="modal-dialog">' +
+      '<div class="modal-content">' +
+        '<div class="modal-header">' +
+          '<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>' +
+        '</div>' +
+        '<div class="modal-body">' +
+          '<p>WHAT ACCOUNT TYPE YOU NEED?</p>' +
+          '<div class="choose-icon"></div>' +
+        '</div>' +
+        '<div class="modal-footer">' +
+          '<a href="" class="btn btn-black">I am loogking for Artist</a>' +
+          '<a href="" class="btn btn-action">I am music Artist</a>' +
+        '</div>' +
+      '</div>' +
+    '</div>' +
+  '</div>';
+  $('body').append(boostrapModal);
+  $('#registrationModal').modal();
+});
+//----
+//---- 6. Functions calls ----//
 $(document).ready(function(){
   parallax();
   //---- plugins triggers
