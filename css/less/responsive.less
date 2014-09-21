@@ -132,133 +132,94 @@
 /*------------------------------------------------------------------ */
 /*---- 2. PROFILE PAGE --------------------------------------------- */
 /*------------------------------------------------------------------ */
-// @media screen and (max-width:991px) {
-// 	#profileDescription .customWidth { width: 40%;}
-// 	#pressrelease .customWidth { width:60% }
-// 	#latestStuff .customWidth { width: 60%;}
-// }
-
-@media screen and (max-width:1199px) {
-	#profilePage + #links { margin-top: 0px; }
-	#pressrelease .release { display:inline-block; width: 49.5%; border:none; }
-	#pressrelease .release img { float:left; }
-	#pressrelease .release div { bottom:0px; width:64% }
-	#pressrelease .btn-action {
-		position:relative;
-		bottom:17px;
-		padding:5px 22px;
-		height:47px;
-		margin:0px;
-		width:auto;
+#profilePage {
+	@media screen and (max-width:1199px) {
+		+ #links { margin-top: 0px; }
+		.pressrelease .release { display:inline-block; width: 49.5%; border:none; }
+		.pressrelease .release img { float:left; }
+		.pressrelease .release div { bottom:0px; width:64% }
+		.pressrelease .btn-action {
+			position:relative;
+			bottom:17px;
+			padding:5px 22px;
+			height:47px;
+			margin:0px;
+			width:auto;
+		}
+		.latestStuff .eventPanel h4 { width:48%; }
+		.latestStuff .eventPanel header { padding: 0px 5px; }
+		.latestStuff .eventPanel .eventPlace { padding: 10px 10px 5px 0; }
+		.latestStuff .panel:last-child { margin-bottom: 40px; }
+		.latestStuff .eventPanel header { width: 65%; }
+		.latestStuff .eventPanel h4 { width: 70%; }
 	}
-	#latestStuff .eventPanel h4 { width:48%; }
-	#latestStuff .eventPanel header { padding: 0px 5px; }
-	#latestStuff .eventPanel .eventPlace { padding: 10px 10px 5px 0; }
-	#latestStuff .panel:last-child { margin-bottom: 40px; }
-	#latestStuff .eventPanel header { width: 65%; }
-	#latestStuff .eventPanel h4 { width: 70%; }
-}
-
-@media screen and (max-width:991px) {
-	#pressrelease > div, #latestStuff > div { padding-left:0px; width:62% }
-	#profileDescription .leftSide { width:38% }
-	#latestStuff span, #latestStuff a { font-size:@baseFontSize - 1px; }
-}
-@media screen and (max-width:767px) {
-	// #pressrelease > div, #latestStuff > div { padding-left:15px; width:100% }
-	// #pressrelease > .pull-right { float:none!important; }
-	// #pressrelease .panel { margin-bottom: 0px; }
-	// #pressrelease .release { width: 100%; }
-	// #pressrelease .btn-action { margin-top: 30px; }
-	// #profileDescription { margin-bottom: -215px; }
-	// #profileDescription .leftSide { width:100%; float:none; }
-	// #latestStuff { margin-top: 0px; }
-	// #latestStuff span, #latestStuff a { font-size:@baseFontSize; }
-	// #latestStuff .eventPanel img { width: 80px; }
-
-	// #pressrelease .release { width: 100%; }
-	// 09.20
-
-	// #profileDescription .leftSide { width:50%; float:left; margin-bottom: -220px; }
-	// #profileDescription .panelSummary { display:none; }
-	// #pressrelease > div { width: 50%; }
-	// #pressrelease .release { width: 100%; }
-	// #pressrelease .btn-action { margin-top: 30px; }
-	// #pressrelease .panel-body { padding-bottom: 0px; }
-	// #pressrelease .panel { margin-bottom: 0px; }
-	// #latestStuff > div { width:100%; float:right; padding-left: 15px; }
-}
-
-@media screen and (max-width:767px) {
-	#profileDescription .leftSide, #pressrelease > div, #latestStuff > div { width: 100%; }
-	#profileDescription .leftSide { margin-bottom: -215px; }
-	#latestStuff .eventPanel img { width: 80px; }
-	#latestStuff { float:left; width: 100%; }
-	#pressrelease>div, #latestStuff>div { padding-left: 15px; }
-	#pressrelease .release div span, #pressrelease .btn-action { bottom: 0px; }
-	#latestStuff .newSongPanel { padding: 10px 0px 10px 0px; }
-	#latestStuff .eventPanel img { width: auto; }
-	#latestStuff .eventPanel header { width: 79%; }
-	#latestStuff .newSongPanel .date { margin-right: 11px; }
-}
-
-
-@media screen and (max-width:767px) {
-	#latestStuff span, #latestStuff a { font-size:@baseFontSize - 1px; }
-	
-	#latestStuff .eventPanel img { margin-right:10px; }
-	#latestStuff .eventPanel .eventPlace { padding: 10px 5px 5px 0; }
-	#latestStuff .eventPanel .eventType { padding: 5px 0 5px 0px; }
-	#latestStuff .eventPanel h4 { margin-bottom: 5px; width:62%; }
-	#latestStuff .eventPanel h4, #latestStuff .newSongPanel h4 { font-size:@baseFontSize + 1px; }
-	#latestStuff .eventPanel header { height: 56px; width:80%; }
-	#latestStuff header span { margin-bottom: 8px; float: left; }
-	#latestStuff .eventPanel .eventPlace { width: 50%; padding-top:0px; }
-	#latestStuff, #pressrelease { margin-top: 0px; }
-	#pressrelease .release { width: 100%; }
-	#pressrelease .panel { margin-bottom: 5px; }
-	#pressrelease .btn { width: 100%; margin-top: 10px; }
-	#pressrelease h3 { padding: 15px 0px 0px 10px; }
-	#latestStuff .eventPanel img { width: 80px; }
-	#latestStuff .eventPanel h4 { width: 100%; }
-	#pressrelease .release div { width: 80%; }
-
-	
-	#profilePage .panel-body { padding:10px; }
-}
-@media screen and (max-width:579px) {
-	#latestStuff span, #latestStuff a { font-size:@baseFontSize - 1px; }
-	
-	#latestStuff .eventPanel img { margin-right:10px; }
-	#latestStuff .eventPanel .eventPlace { padding: 10px 5px 5px 0; }
-	#latestStuff .eventPanel .eventType { padding: 5px 0 5px 0px; }
-	#latestStuff .eventPanel h4 { margin-bottom: 5px; }
-	#latestStuff header span { margin-bottom: 8px; float: right; }
-	#latestStuff .eventPanel h4, #latestStuff .newSongPanel h4 { font-size:@baseFontSize + 1px; }
-	#profileDescription .leftSide .responsiveMenu { display:block; }
-	#profileDescription .leftSide .panelSummary { display: none; }
-	#latestStuff .newSongPanel .date { bottom:0px; top:10px; }
-
-	
-	#profilePage .panel-body { padding:10px; }
-}
-@media screen and (max-width:522px) {
-	#latestStuff .eventPanel header, #pressrelease .release div { width:75%; }
-	#pressrelease .release div span { margin-top: 3px; }
-}
-@media screen and (max-width:432px) {
-	#latestStuff .eventPanel header { width:60%; }
-	#latestStuff .eventPanel header span { float:left }
-	#latestStuff .eventPanel .eventPlace {
-		.cellwrap();
-		display: inline-block;
-		max-width: 180px;
-		width: auto;
+	@media screen and (max-width:991px) {
+		.pressrelease > div, .latestStuff > div { padding-left:0px; width:62% }
+		.profileDescription .leftSide { width:38% }
+		.latestStuff span, .latestStuff a { font-size:@baseFontSize - 1px; }
 	}
-	#latestStuff .eventPanel .eventType { position:relative; bottom:8px; }
-}
-@media screen and (max-width:359px) {
-	#latestStuff .eventPanel { position:relative; }
+	@media screen and (max-width:767px) {
+		.profileDescription .leftSide, .pressrelease > div, .latestStuff > div { width: 100%; }
+		.profileDescription .leftSide { margin-bottom: -215px; }
+		.latestStuff .eventPanel img { width: 80px; }
+		.latestStuff { float:left; width: 100%; }
+		.pressrelease>div, .latestStuff>div { padding-left: 15px; }
+		.pressrelease .release div span, .pressrelease .btn-action { bottom: 0px; }
+		.latestStuff .newSongPanel { padding: 10px 0px 10px 0px; }
+		.latestStuff .eventPanel img { width: auto; }
+		.latestStuff .eventPanel header { width: 79%; }
+		.latestStuff .newSongPanel .date { margin-right: 11px; }
+
+		.latestStuff span, .latestStuff a { font-size:@baseFontSize - 1px; }
+		.latestStuff .eventPanel img { margin-right:10px; }
+		.latestStuff .eventPanel .eventPlace { padding: 10px 5px 5px 0; }
+		.latestStuff .eventPanel .eventType { padding: 5px 0 5px 0px; }
+		.latestStuff .eventPanel h4 { margin-bottom: 5px; width:62%; }
+		.latestStuff .eventPanel h4, .latestStuff .newSongPanel h4 { font-size:@baseFontSize + 1px; }
+		.latestStuff .eventPanel header { height: 56px; width:80%; }
+		.latestStuff header span { margin-bottom: 8px; float: left; }
+		.latestStuff .eventPanel .eventPlace { width: 50%; padding-top:0px; }
+		.latestStuff, .pressrelease { margin-top: 0px; }
+		.pressrelease .release { width: 100%; }
+		.pressrelease .panel { margin-bottom: 5px; }
+		.pressrelease .btn { width: 100%; margin-top: 10px; }
+		.pressrelease h3 { padding: 15px 0px 0px 10px; }
+		.latestStuff .eventPanel img { width: 80px; }
+		.latestStuff .eventPanel h4 { width: 100%; }
+		.pressrelease .release div { width: 80%; }
+		.panel-body { padding:10px; }
+	}
+	@media screen and (max-width:579px) {
+		.latestStuff span, .latestStuff a { font-size:@baseFontSize - 1px; }
+		.latestStuff .eventPanel img { margin-right:10px; }
+		.latestStuff .eventPanel .eventPlace { padding: 10px 5px 5px 0; }
+		.latestStuff .eventPanel .eventType { padding: 5px 0 5px 0px; }
+		.latestStuff .eventPanel h4 { margin-bottom: 5px; }
+		.latestStuff header span { margin-bottom: 8px; float: right; }
+		.latestStuff .eventPanel h4, .latestStuff .newSongPanel h4 { font-size:@baseFontSize + 1px; }
+		.profileDescription .leftSide .responsiveMenu { display:block; }
+		.profileDescription .leftSide .panelSummary { display: none; }
+		.latestStuff .newSongPanel .date { bottom:0px; top:10px; }
+		.panel-body { padding:10px; }
+	}
+	@media screen and (max-width:522px) {
+		.latestStuff .eventPanel header, .pressrelease .release div { width:75%; }
+		.pressrelease .release div span { margin-top: 3px; }
+	}
+	@media screen and (max-width:432px) {
+		.latestStuff .eventPanel header { width:60%; }
+		.latestStuff .eventPanel header span { float:left }
+		.latestStuff .eventPanel .eventPlace {
+			.cellwrap();
+			display: inline-block;
+			max-width: 180px;
+			width: auto;
+		}
+		.latestStuff .eventPanel .eventType { position:relative; bottom:8px; }
+	}
+	@media screen and (max-width:359px) {
+		.latestStuff .eventPanel { position:relative; }
+	}
 }
 /*------------------------------------------------------------------ */
 /*---- 3. REGISTRATION FORM ---------------------------------------- */
@@ -439,3 +400,6 @@
 			}
 		}
 	}
+/*------------------------------------------------------------------ */
+/*------- MOBILE --------------------------------------------------- */
+/*------------------------------------------------------------------ */
