@@ -8,6 +8,9 @@
 		width:1200px;
 	}
 }
+/*------------------------------------------------------------------ */
+/*------- PROFILE DESCRIPTION -------------------------------------- */
+/*------------------------------------------------------------------ */
 #profileDescription {
 	img { width:100%; }
 	.leftSide {
@@ -49,6 +52,30 @@
 				}
 			}
 		}
+		.responsiveMenu {
+			display:none;
+			border: 1px solid #ddd;
+			margin-bottom: 20px;
+			border-radius: 5px;
+			padding: 15px;
+			font-family: 'OpenSans-Bold';
+			cursor:pointer;
+			.gradient (#FFF, #f1f1f1);
+			.hamburger {
+				display: inline-block;
+				width: 20px;
+				height: 12px;
+				float:right;
+				.icon-bar {
+					display: block;
+					width: 22px;
+					height: 3px;
+					border-radius: 1px;
+					background-color: #333;
+					&+.icon-bar { margin-top: 3px; }
+				}
+			}
+		}
 	}
 }
 /*------------------------------------------------------------------ */
@@ -61,6 +88,9 @@
 	.panel:last-child { border-radius:0px 0px 4px 4px; border-bottom:1px solid #DDD; }
 	h3 { padding:15px 0px 15px 0px; }
 	h3:after { content:":"; padding-left: 2px; }
+	.eventPanel header { display:inline-block; width:72%; }
+	.eventPanel .subPanel > span:first-child { .cellwrap(); max-width: 180px; display:inline-block; }
+	.eventPanel .subPanel .bold { .cellwrap(); max-width: 135px; display:inline; }
 	.newSongPanel {
 		padding:20px;
 		background-color: #f8f9fa;

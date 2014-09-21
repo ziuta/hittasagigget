@@ -146,6 +146,14 @@
 								<button class="btn btn-primary">BOOK NOW</button>
 							</div>
 						</div><!-- end of panel description -->
+						<div class="responsiveMenu">
+							<span>Menu</span>
+							<span class="hamburger">
+						        <span class="icon-bar"></span>
+						        <span class="icon-bar"></span>
+						        <span class="icon-bar"></span>
+				    		</span>
+						</div>
 						<div class="panel panel-default panelSummary">
 							<div class="panel-body">
 								<div class="singleRow">
@@ -343,5 +351,10 @@
 			</div>
 		</div>
 	</footer><!-- end #mainFooter -->
+	<script>
+		$(document).on('click', '.responsiveMenu', function(){
+			$(this).next().slideToggle(500);
+		});
+	</script>
 </body>
 </html>
